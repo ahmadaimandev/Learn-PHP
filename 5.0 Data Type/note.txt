@@ -11,4 +11,19 @@ Variables can store data of different types, and different data types can do dif
 - NULL
 - Resource
 
-use var_dump() function to get data type of any object
+use var_dump() function to get data type of any Object
+
+php object
+-> Classes and Objects are two main aspects of OOP.
+-> Class is a template for objects, and an object is an instance of a class.
+
+-> When the individual objects are created, they inherit all the properties and behaviors from the class, but each object
+will have different value for the properties.
+
+-> Let assumed we have a class named Car that can have properties like model, color etc. We can define Variables
+like $model, $color, and so on, to hold the values of these propeties.
+
+-> When the individual objects (volvo, BMW, Toyota, etc) are created, they inherit all the propeties and behaviorss
+from the class, but each object will have different values of the properties.
+
+-> if you create a __construct() function, PHP will automatically call this function when you create an object from a class.
