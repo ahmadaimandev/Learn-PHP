@@ -62,5 +62,10 @@
     echo "<br>";
     var_dump($MalaysianCars);
     ?>
+    
+    <h2 style="text-align: center;">PHP Object</h2>
+    <?php
+    
+    ?>
 </body>
 </html>
