@@ -8,9 +8,10 @@
 <body>
     <?php
     //php code goes inside here
-    echo "Hello World";
-    echo "Hello World";
-    echo "Hello World";
+    ECHO "Hello World <br>";
+    EcHo "Hello World <br>";
+    eCho "Hello World <br>";
+    //echo keyword are not case sensitive
     ?>
 </body>
 </html>

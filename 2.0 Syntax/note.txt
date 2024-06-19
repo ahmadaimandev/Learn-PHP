@@ -1,1 +1,11 @@
 Lesson 2
+
+-> A PHP script is executed on the server, and the plain HTML result is sent back to the browser.
+-> A PHP script can be placed anywhere in the document.
+-> A PHP file normally contains HTML tags, and some PHP scripting code.
+
+-> Note: PHP statements end with a semicolon (;).
+
+
+PHP Case Sensitivity
+if, else, while, echo, etc, classes, functions, and user-defined functions are not case-sensitive.
