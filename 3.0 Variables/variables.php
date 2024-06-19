@@ -87,10 +87,11 @@ function StaticFunc () {
 //each time function is called, that variable will still have the information it contained
 //from the last time the function was called.
 
-//TODO: The variable is still local to the function 
+//NOTE: The variable is still local to the function 
 StaticFunc();
 StaticFunc();
 StaticFunc();
+//Variable $e will increased the number
 ?>
 </body>
 
