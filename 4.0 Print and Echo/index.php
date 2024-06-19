@@ -23,6 +23,10 @@
         text-align: center;
         text-transform: uppercase;
     }
+
+    h3 {
+        font-weight: normal ;
+    }
 </style>
 <body>
     <header>
