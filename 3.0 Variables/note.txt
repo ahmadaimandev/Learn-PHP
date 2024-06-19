@@ -7,3 +7,25 @@ example:
 
 $Firstname = "Muhammad";
 $Lastname = "Ali";
+
+
+Rules for PHP variables:
+- starts with the $ sign, followed by the name of the variable.
+- variable name must start with a letter or the underscore character.
+- variable name cannot start with a number.
+- variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+- Variable names are case-sensitive ($age and $AGE are two different variables).
+
+Remember that PHP variable names are case-sensitive!
+
+PHP data types: 
+-> String
+-> Integer
+-> Float (floating point numbers - also called double)
+-> Boolean
+-> Array
+-> Object
+-> NULL
+-> Resource
+
+Get data type by using var_dump()
