@@ -1,0 +1,14 @@
+Lesson 5
+
+Variables can store data of different types, and different data types can do different things.
+
+- String
+- Integer
+- Float (floating point numbers - also called double)
+- Boolean
+- Array
+- Object
+- NULL
+- Resource
+
+use var_dump() function to get data type of any object

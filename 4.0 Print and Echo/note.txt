@@ -14,3 +14,5 @@ Different between Echo and print
 print
   - has return value so it can be used in expression.
   - Can take one argument
+
+both echo and print statement can be print with or without parentheses.

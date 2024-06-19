@@ -3,51 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Echo & Print</title>
+    <title>Echo and Print</title>
 </head>
-<style>
-    
-    * {
-        font-family: "Open Sans", sans-serif;
-    }
-
-    header {
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    h2 {
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    h3 {
-        font-weight: normal ;
-    }
-
-    .first {
-        background-color: red;
-        padding: 10px;
-    }
-</style>
 <body>
-    <header>
-        <h2>Echo and Print Statement</h2>
-    </header>
+    <h2>Echo Statement</h2>
+    <?php
+    echo "<h2>PHP is Fun!</h2>";
+    echo "Hello world!<br>";
+    echo "I'm about to learn PHP!<br>";
+    echo "This ", "string ", "was ", "made ", "with multiple parameters. <br>";
 
-    <main class="first">
-        <h3>The PHP echo statement</h3>
-        <p class="explain">
-            
-        </p>
-        <code>
-            <?php
+    $txt1 = "Learn PHP";
+    $txt2 = "W3Schools.com";
+    $x = 5;
+    $y = 4;
 
-            ?>
-        </code>
-    </main>
+    echo "<h2>" .$txt1. "</h2>";
+    echo "Study PHP at "  .$txt2. "<br>";
+    echo "Total sum of two numbers: " .$x + $y;
+    
+    echo "<hr>";
+    ?>
+    <h2>Print Statement</h2>
+    <?php
+    print "<h2>PHP is Fun!</h2>";
+    print "Hello world!<br>";
+    print "I'm about to learn PHP!";
+
+    $txt1 = "Learn PHP";
+    $txt2 = "W3Schools.com";
+    $x = 5;
+    $y = 4;
+
+    print "<h2>" . $txt1 . "</h2>";
+    print "Study PHP at " . $txt2 . "<br>";
+    print "Total sum of two numbers: " .$x + $y;
+    ?>
 </body>
 </html>
