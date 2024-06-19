@@ -1,0 +1,16 @@
+Lesson 4
+
+-> two basic way to get output:
+1. echo
+2. print
+
+Different between Echo and print
+
+-> echo
+  - has no return value
+  - Can take multiple parameters (although such usage is rare).
+  - marginally faster than print. 
+
+print
+  - has return value so it can be used in expression.
+  - Can take one argument
