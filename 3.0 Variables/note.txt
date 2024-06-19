@@ -54,3 +54,7 @@ function myTest() {
 }
 
 
+Static keyword
+-> when a functions is completed/executed, all of its variables are deleted. 
+however, sometimes we want a local variable NOT to be deleted. We need it a further job.
+

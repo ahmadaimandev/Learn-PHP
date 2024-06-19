@@ -75,6 +75,23 @@ function Globalfunc () {
 Globalfunc() ;
 echo "Total of two number: " .$d;
 ?>
+
+<h3>Static keyword</h3>
+<p>Must declare the static keyword when you first declare variable</p>
+<?php
+function StaticFunc () {
+    static $e = 0;
+    echo $e;
+    $e++;
+}
+//each time function is called, that variable will still have the information it contained
+//from the last time the function was called.
+
+//TODO: The variable is still local to the function 
+StaticFunc();
+StaticFunc();
+StaticFunc();
+?>
 </body>
 
 </html>
