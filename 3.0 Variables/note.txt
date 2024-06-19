@@ -29,3 +29,17 @@ PHP data types:
 -> Resource
 
 Get data type by using var_dump()
+
+
+PHP variables scope
+
+-> The scope of a variable is the part of the script where the variable can be referenced/used.
+
+Three different variables scope:
+-> local
+-> global
+-> static
+
+Global and Local scope
+A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function:
+

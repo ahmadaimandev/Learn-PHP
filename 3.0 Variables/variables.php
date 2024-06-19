@@ -7,38 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Declaring PHP Variables</title>
 </head>
-<style>
-    * {
-        font-family: "Roboto", sans-serif;
-    }
-
-    .header-title {
-        margin: 0 auto;
-        width: 60%;
-    }
-
-    h2 {
-            text-align: center;
-            text-transform: uppercase;
-    }
-</style>
-
-<body>
-    <div class="header-title">
-        <h2>Declaring PHP Variables</h2>
-    </div>
+<?php
+//Variable with global scope
+//A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function:
+$x = 5;
+function myTest() {
+    //using x inside this function will generate an error
+    echo "<p>Variable x inside function is: $x</p>";
+}
+myTest();
+echo "<p>Variable x inside the function is: $x</p>";
+?>
 </body>
 </html>
-<?php
-$Name = "James"; //put quotes around the value when assign text value
-$firstNum = 1;
-$secondNum = 3;
-var_dump($firstNum); //using var_dump() to get variable data type
-echo "<br>";
-var_dump($Name);
-echo "<br>";
-
-echo "<br>";
-echo "Hello " .$Name. "<br>";
-echo "Total of two numbers: " .$firstNum + $secondNum. "<br>";
-?>
