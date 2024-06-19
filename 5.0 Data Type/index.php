@@ -54,6 +54,7 @@
     echo "<br>";
     var_dump($f);
 
+    //An array stores multiple values in one single variable.
     echo "<h4>This is array data type</h4>";    
     $MalaysianCars = array("Perodua", "Proton");
     $JapanCars = array("Mazda", "Toyota", "Nissan");
