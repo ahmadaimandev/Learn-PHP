@@ -1,3 +1,9 @@
 Lesson 3
 
 -> Variables are "containers" for storing information.
+-> use dollar sign ($) to declare a php variable.
+
+example:
+
+$Firstname = "Muhammad";
+$Lastname = "Ali";
