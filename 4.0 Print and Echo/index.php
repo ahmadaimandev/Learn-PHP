@@ -27,14 +27,22 @@
     h3 {
         font-weight: normal ;
     }
+
+    .first {
+        background-color: red;
+        padding: 10px;
+    }
 </style>
 <body>
     <header>
         <h2>Echo and Print Statement</h2>
     </header>
 
-    <main>
+    <main class="first">
         <h3>The PHP echo statement</h3>
+        <p class="explain">
+            
+        </p>
         <code>
             <?php
 
