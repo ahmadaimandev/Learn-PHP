@@ -22,7 +22,7 @@ $x = 5;
 function myTest()
 {
     //using x inside this function will generate an error
-    echo "<p>Variable x inside function is: $x</p>";
+    //echo "<p>Variable x inside function is: $x</p>";
     //A variable declared outside a function has a GLOBAL SCOPE
     //and can only be accessed outside a function:
 }
