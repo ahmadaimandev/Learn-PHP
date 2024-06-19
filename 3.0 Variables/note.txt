@@ -41,5 +41,16 @@ Three different variables scope:
 -> static
 
 Global and Local scope
-A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function:
+A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function
+
+GLOBAL keyword
+
+The global keyword is used to access a global variable from within a function.
+To do this, use the global keyword before the variables (inside the function)
+
+example:
+function myTest() {
+  $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+}
+
 
