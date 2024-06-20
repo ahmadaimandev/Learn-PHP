@@ -1,0 +1,6 @@
+Lesson 6.3 String concatenate
+
+-> To combine two strings together you can use . operator
+-> An easier way is by using double quotes.
+
+-> by surrounding the two variables in double quotes with a white space between them.

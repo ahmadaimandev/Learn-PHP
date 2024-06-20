@@ -1,0 +1,9 @@
+Lesson 6.4 
+
+Slicing String
+
+-> This function allows to return a range of character by using the substr().
+-> To use: specify the start index and the number of characters you want to return.
+
+Slicing to the end
+-> By leaving out the length parameter, the range will go to the end
