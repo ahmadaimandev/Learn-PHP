@@ -47,7 +47,10 @@
 
     <h3>Change Array Value</h3>
     <?php
-    
+    //Change the second item:
+    $ChangeArray = array("Ali", "Ahmad", "Abu", "Jackson");
+    $ChangeArray[3] = "Zakaria";
+    var_dump($ChangeArray);
     ?>
 </body>
 </html>
