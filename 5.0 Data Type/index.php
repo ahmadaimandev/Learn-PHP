@@ -94,7 +94,7 @@
     <?php
     //example
     $num = 56;
-    $num = (string) $num;
+    $num = (string) $num; //casting from int to string
     var_dump($num);
     ?>
 </body>

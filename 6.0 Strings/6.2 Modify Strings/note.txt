@@ -1,0 +1,6 @@
+Lesson 6.1 
+
+Modify Strings
+
+1. Uppercase
+-> strtoupper() = functions return string in uppercase
