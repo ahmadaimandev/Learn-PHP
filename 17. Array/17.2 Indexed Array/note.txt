@@ -1,0 +1,8 @@
+Lesson 17.2
+
+Indexed Array
+-> In indexed array each items has an index number.
+-> by default, first item is 0 and second item is 1.
+
+Accessed Indexed Array
+-> To access an array item you can refer to the index number.
