@@ -13,3 +13,11 @@ Modify Strings
 
 4. Reverse string
 -> strrev() = function to reverse string
+
+5. Remove whitespace
+-> trim() = remove any whitespace from the beginning or the end.
+
+6. Convert string to array
+-> explode = functions that will split strings into an array.
+-> the first parameter of the explode() function represent the "separator". 
+The separator specifies where to split the string
