@@ -11,22 +11,27 @@
         text-transform: uppercase;
     }
 </style>
-<>
+
+<body>
     <?php
     $carList = array("Proton, Perodua", "Honda", "Toyota");
-    $numList = array(1,2,3,4,5,6);
-    var_dump($carList,  $numList); //will show variable type
+    $numList = array(1, 2, 3, 4, 5, 6);
+    var_dump($carList, $numList); //will show variable type
     ?>
 
     <hr>
 
     <h3>Array Items</h3>
     <?php
-    function myFunction() {
+    function myFunction()
+    {
         echo "This text call from function i made!";
     }
-    $myArr = array("Volvo", 15,["Apples", "Bananas"], myFunction());
+    $myArr = array("Volvo", 15, ["Apples", "Bananas"], myFunction());
     var_dump($myArr);
     ?>
+
+    <h3></h3>
 </body>
+
 </html>
