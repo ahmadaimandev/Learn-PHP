@@ -9,3 +9,10 @@ Accessed Indexed Array
 
 Change Array Value
 ->To change the value of an array item, use the index number
+
+Loop Through an Indexed Array
+-> To loop through and print all the values of an indexed array, you could use a foreach loop.
+
+Indexed number
+-> The key of indexed array is a number, by default the first item is 0 and the second is 1.
+-> But there are exceptions, new items get the next index number, meaning one higher than the highest existing index.

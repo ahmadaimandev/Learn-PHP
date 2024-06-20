@@ -8,7 +8,7 @@
     <style>
         h3 {
             text-align: center;
-            text-transform: uppercase;
+            text-transform: capitalize;
             border: 1px solid black;
             border-radius: 10px;
             background-color: black;
@@ -52,5 +52,47 @@
     $ChangeArray[3] = "Zakaria";
     var_dump($ChangeArray);
     ?>
+
+    <h3>Loop In Array</h3>
+    <?php
+    //Display all array items:
+
+    $ListName = array("Aiman", "Ali", "Ahmad", "Samad", "Umar");
+    foreach ($ListName as $loop) {
+        echo "$loop <br>";
+    }
+    ?>
+
+    <h3>Index Number</h3>
+    <?php
+    /*
+    Example:
+    $cars[0] = "Volvo";
+    $cars[1] = "Audi";
+    $cars[2] = "Proton";
+
+    by adding array_push() function to add a new item, the new item will get the index 3:
+    */
+    //Example with ordered number;
+    $cars[0] = "Volvo";
+    $cars[1] = "Audi";
+    $cars[2] = "Proton";
+    
+    array_push($cars,"Ford");
+    var_dump($cars);
+
+    echo "<br>";
+    //if you use the array_push() function to add a new item, the new item will get the index 3:
+
+    //example with random numbers:
+    $LuxCar[12] = "Mercedes";
+    $LuxCar[14] = "Lexus";
+    $LuxCar[56] = "Bentley";
+    $LuxCar[78] = "Rolls Royce";
+
+    array_push($LuxCar, "Ferrari");
+    var_dump($LuxCar);
+    //if you use the array_push() function to add a new item, the new item will get the index 79:
+    ?>    
 </body>
 </html>
