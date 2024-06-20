@@ -6,22 +6,24 @@
     <title>PHP Numbers</title>
 </head>
 <style>
-    h2 {
+    h1 {
         border: 1px solid;
         width: 20%;
         margin: 20px auto;
         text-align: center;
         text-transform: uppercase;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        transition: 0.2s ease-in-out;
-        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+        border-radius: 10px;
+        cursor: pointer;
     }
 
-    h2:hover {
-        background-color: red;
-        border: 1px solid red;
+    h1:hover {
+        background-color: purple;
+        border: 1px solid purple;
         color: white;
-        transition: 0.2s ease-in-out;
+        transition: 0.5s ease-in-out;
+        border-radius: 4px;
     }
 
     .first-main {
@@ -30,7 +32,7 @@
     }
 </style>
 <body>
-    <h2>Numbers In PHP</h2>
+    <h1>Numbers In PHP</h1>
 
     <main class="first-main">
         <p>This is variable numeric types. Created when you assign

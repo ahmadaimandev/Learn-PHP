@@ -10,3 +10,6 @@ There are three main numeric types in php:
 In addition PHP has two more data type used for numbers:
 * Infinity
 * NaN
+
+
+PHP Integers
