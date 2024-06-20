@@ -4,3 +4,9 @@ Modify Strings
 
 1. Uppercase
 -> strtoupper() = functions return string in uppercase
+
+2. Lowercase
+-> strtoupper() = function return string in lowercase
+
+3. Replace string
+-> str_replace() = function replaces some character with some other character in a string
