@@ -1,0 +1,12 @@
+Lesson 7
+
+PHP Numbers
+
+There are three main numeric types in php:
+* Integer
+* FLoat 
+* Number Strings
+
+In addition PHP has two more data type used for numbers:
+* Infinity
+* NaN
