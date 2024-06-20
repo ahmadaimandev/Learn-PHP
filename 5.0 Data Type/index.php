@@ -92,7 +92,10 @@
 
     <h2>Change Data Type</h2>
     <?php
-    
+    //example
+    $num = 56;
+    $num = (string) $num;
+    var_dump($num);
     ?>
 </body>
 </html>
