@@ -1,0 +1,8 @@
+Lesson 6.5
+
+Escape Characters
+-> To insert characters that are illegal in a string, use and escape character.
+-> An escape character is a backslash \ followed by the character you want to insert.
+-> An example of an illegal character is a double quote inside a string that is surrounded
+by double quotes.
+
