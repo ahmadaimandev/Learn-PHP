@@ -41,7 +41,9 @@
 
     <h3 style="text-transform: uppercase">Negative Length</h3>
     <?php
-    
+    $sampleText = "Hi, How Are You?";
+    $negativeSlice = substr($sampleText, 5, -3);
+    echo "The output is: $negativeSlice";
     ?>
 </body>
 </html>
