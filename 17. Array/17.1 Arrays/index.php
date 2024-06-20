@@ -13,6 +13,7 @@
 </style>
 
 <body>
+    <h3>Arrays</h3>
     <?php
     $carList = array("Proton, Perodua", "Honda", "Toyota");
     $numList = array(1, 2, 3, 4, 5, 6);
@@ -31,6 +32,8 @@
     var_dump($myArr);
     echo count($myArr);
     ?>
+
+    <hr>
 
     <h3>Array function</h3>
     <?php
