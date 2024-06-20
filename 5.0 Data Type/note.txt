@@ -27,3 +27,11 @@ like $model, $color, and so on, to hold the values of these propeties.
 from the class, but each object will have different values of the properties.
 
 -> if you create a __construct() function, PHP will automatically call this function when you create an object from a class.
+
+
+
+PHP NULL value
+-> NULL is a special data type which can have only one value: NULL
+-> NULL is variable that have no value assigned to it.
+
+TIPS: if variable created without a value, it is automatically assigned value of NULL. 

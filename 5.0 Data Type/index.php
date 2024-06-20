@@ -81,5 +81,13 @@
     $myCar = new Car("Red", "Perodua");
     var_dump($myCar);
     ?>
+
+    <h2 style="text-align:center;">PHP Null Value</h2>
+    <?php
+    $text = "Hello World!";
+    $nullvalue = null;
+
+    var_dump($nullvalue);
+    ?>
 </body>
 </html>
