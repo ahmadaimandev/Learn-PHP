@@ -8,11 +8,12 @@
 <body>
     <h2>Modifying Strings</h2>
     <?php
-    $justname = "Aiman";
+    $justname = "Hello World";
     echo strtoupper($justname) ."<br>"; //uppercase functions
     echo strtolower($justname) ."<br>"; //lowercase functions
-    echo str_replace("Aiman", "Ali", $justname); //function to replace other strings
-    
+    echo str_replace("World", "Aiman", $justname) ."<br>"; //function to replace other strings
+    echo strrev($justname); //function to reverse a string
+
     ?>
 </body>
 </html>

@@ -5,6 +5,9 @@
         "Firstname",
         "Globalfunc",
         "Lastname",
+        "revese",
+        "strrev",
+        "strtoupper",
         "uppertext"
     ]
 }

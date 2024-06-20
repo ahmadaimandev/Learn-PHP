@@ -10,3 +10,6 @@ Modify Strings
 
 3. Replace string
 -> str_replace() = function replaces some character with some other character in a string
+
+4. Reverse string
+-> strrev() = function to reverse string
