@@ -38,7 +38,7 @@
     <h3>Array function</h3>
     <?php
     $cars = array("Volvo", "BMW", "Toyota");
-    echo count($cars);
+    echo "Total: ".count($cars);
     ?>
 </body>
 
