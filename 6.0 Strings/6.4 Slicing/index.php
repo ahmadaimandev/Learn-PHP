@@ -8,7 +8,6 @@
 <body>
     <h2 style="text-transform: uppercase; text-align:center; font-size: 40px;">Slicing Strings</h2>
 
-
     <h3 style="text-transform: uppercase;">Slicing Strings</h3>
     <?php
     //Slicing strings
@@ -36,6 +35,13 @@
     //Get the 3 characters, starting from the "o" in world (index -5):
     $slicingend = substr($FromtheEnd, -5, 3); //The last character has index -1.
     echo "The output is: $slicingend" ; //The output: "JKL"
+    ?>
+
+    <hr>
+
+    <h3 style="text-transform: uppercase">Negative Length</h3>
+    <?php
+    
     ?>
 </body>
 </html>

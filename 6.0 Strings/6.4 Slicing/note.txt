@@ -11,3 +11,7 @@ Slicing to the end
 Slicing from the end
 -> Use the negative indexes to start the slice from the end of string
 ->  The last character has index -1.
+
+Negative length
+-> use negative length to specify how many character to omit, starting from the end
+of string.
