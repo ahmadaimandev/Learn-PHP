@@ -29,9 +29,14 @@
     }
     $myArr = array("Volvo", 15, ["Apples", "Bananas"], myFunction());
     var_dump($myArr);
+    echo count($myArr);
     ?>
 
-    <h3></h3>
+    <h3>Array function</h3>
+    <?php
+    $cars = array("Volvo", "BMW", "Toyota");
+    echo count($cars);
+    ?>
 </body>
 
 </html>
