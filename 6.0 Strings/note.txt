@@ -1,0 +1,14 @@
+Lesson 6
+
+-> string in php surrounded by single or double quotation marks.
+
+Note: there's a big difference between single and double quotes:
+1. double quotes process a special character, Meanwhile
+2. single quote does not.
+
+A. string length
+-> strlen() = function returns length of string
+
+B. Word Count
+-> str_word_count() = function counts the number of words in a string
+
