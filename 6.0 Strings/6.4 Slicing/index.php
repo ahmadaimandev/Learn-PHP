@@ -34,6 +34,8 @@
     <?php
     $FromtheEnd = "ABCDEFGHIJKLMN";
     //Get the 3 characters, starting from the "o" in world (index -5):
+    $slicingend = substr($FromtheEnd, -5, 3); //The last character has index -1.
+    echo "The output is: $slicingend" ; //The output: "JKL"
     ?>
 </body>
 </html>
