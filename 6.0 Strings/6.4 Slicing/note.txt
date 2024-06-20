@@ -7,3 +7,6 @@ Slicing String
 
 Slicing to the end
 -> By leaving out the length parameter, the range will go to the end
+
+Slicing from the end
+-> Use the negative indexes to start the slice from the end of string

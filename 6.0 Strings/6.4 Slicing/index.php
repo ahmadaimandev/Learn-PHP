@@ -12,7 +12,7 @@
     <h3 style="text-transform: uppercase;">Slicing Strings</h3>
     <?php
     //Slicing strings
-    $string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Our big pizza
+    $string = "ABCDEFGHIJKLMN"; // Our big pizza
     $slice = substr($string,2,10); // We start at position 2 (C) and take 10 slices
     echo "The output is: $slice"; //output "CDEFGHIJKL"
     echo "<br>";
@@ -25,7 +25,15 @@
     //Slicing to the end
     $EndString = "ABCDEFGHIJKLMN";
     $startSlice = substr($EndString,6); //Start the slice at index 6 and go all the way to the end:
-    echo $startSlice; // The output "GHIJKLMN"
+    echo "The output is: $startSlice"; // The output "GHIJKLMN"
+    ?>
+
+    <hr>
+
+    <h3 style="text-transform: uppercase">Slicing from the end</h3>
+    <?php
+    $FromtheEnd = "ABCDEFGHIJKLMN";
+    //Get the 3 characters, starting from the "o" in world (index -5):
     ?>
 </body>
 </html>
