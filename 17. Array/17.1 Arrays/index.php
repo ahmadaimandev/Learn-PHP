@@ -8,8 +8,9 @@
 <body>
     <?php
     $carList = array("Proton, Perodua", "Honda", "Toyota");
+    $numList = array(1,2,3,4,5,6);
 
-    print ($carList);
+    var_dump($carList,  $numList); //will show variable type
     ?>
 </body>
 </html>
