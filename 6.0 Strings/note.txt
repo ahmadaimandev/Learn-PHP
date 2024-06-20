@@ -12,3 +12,7 @@ A. string length
 B. Word Count
 -> str_word_count() = function counts the number of words in a string
 
+C. Search for text within a string
+-> strpos() = function searches for a specific text within a string.
+-> if match found, function returns character position of the first match
+-> if not, it will return false.

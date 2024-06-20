@@ -89,5 +89,10 @@
 
     var_dump($nullvalue);
     ?>
+
+    <h2>Change Data Type</h2>
+    <?php
+    
+    ?>
 </body>
 </html>
