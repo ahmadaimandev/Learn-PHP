@@ -38,10 +38,16 @@
     <h3>Accessed Indexed Array</h3>
     <?php
     $AccessCarNum = array("Proton", "Honda", "Perodua", "Toyota");
+    //count from 0
     echo "This car name is: $AccessCarNum[0] <br>";
     echo "This car name is: $AccessCarNum[1] <br>";
     echo "This car name is: $AccessCarNum[2] <br>";
     echo "This car name is: $AccessCarNum[3]";
+    ?>
+
+    <h3>Change Array Value</h3>
+    <?php
+    
     ?>
 </body>
 </html>

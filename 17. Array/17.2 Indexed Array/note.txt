@@ -6,3 +6,6 @@ Indexed Array
 
 Accessed Indexed Array
 -> To access an array item you can refer to the index number.
+
+Change Array Value
+->To change the value of an array item, use the index number
