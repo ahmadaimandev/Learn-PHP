@@ -18,3 +18,11 @@ iii. Update Array
 iv. Add Array Items
 v. Remove Array Items
 vi. Sort Array
+
+
+-> Array Items
+- Array items can be of any Type.
+- Most common is string and numbers (int,float).
+- But arrays items can also be objects, function or even arrays.
+- You can have different data type in the same array.
+
