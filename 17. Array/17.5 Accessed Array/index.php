@@ -52,5 +52,13 @@
         echo "$x: $y <br>";
     }
     ?>
+
+    <h2>Loop through indexed array</h2>
+    <?php
+    $CarBrand = array("Volvo", "Proton", "Perodua");
+    foreach($CarBrand as $x) {
+        echo "$x <br>";
+    }
+    ?>
 </body>
 </html>
