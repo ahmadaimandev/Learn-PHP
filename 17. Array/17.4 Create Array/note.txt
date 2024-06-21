@@ -24,3 +24,5 @@ $car = array[
     "Perodua",
     "Toyota",
 ];
+
+-> Array Keys

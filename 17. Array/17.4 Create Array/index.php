@@ -10,6 +10,8 @@
         text-align: center;
         margin: 20px auto;
         text-transform: capitalize;
+        font-size: 30px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 </style>
 <body>
@@ -22,6 +24,8 @@
     echo "<br>";
     var_dump($NameList);
 
+    echo "<br>";
+
     //Array also can write in multiple line
     $CarList = [
         "Honda", 
@@ -29,6 +33,7 @@
         "Rolls Royce", 
         "Proton", //A comma after the last thing is allowed
     ];
+    var_dump( $CarList );
     ?>
 </body>
 </html>
