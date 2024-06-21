@@ -14,7 +14,7 @@
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 </style>
-<body>
+<>
     <h3>Create an array</h3>
     <?php
     $NameList = array("Ali", "Ahmad", "Abu", "Samad");
@@ -56,6 +56,26 @@
     echo "<br>";
     array_push($indexCar,"Toyota", "Ferrari");
     print_r($indexCar);
+    ?>
+
+    <h3>Declare an empty array</h3>
+    <?php
+    $emptyArray = [];
+    $emptyArray[0] = "Aiman";
+    $emptyArray[1] = "Samad";
+    $emptyArray[2] = "Zaki";
+
+    var_dump($emptyArray);
+    ?>
+
+    <h3>Mixing array keys</h3>
+    <?php
+    $mixArr =[];
+    $mixArr[0] = "Banana";
+    $mixArr[1] = "Pineapple";
+    $mixArr["Fruits"] = "Cherry";
+
+    var_dump( $mixArr );
     ?>
 </body>
 </html>

@@ -29,3 +29,9 @@ $car = array[
 -> When creating indexed arrays the keys are given automatically, 
 starting at 0 and increased by 1 for each item
 -> so the array above could also be created with keys
+
+-> Declare an empty array
+-> You can declare an empty array first, and add items to it later
+
+-> Mixing array keys
+-> You can have arrays with both indexed and named keys:
