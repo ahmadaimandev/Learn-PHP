@@ -26,5 +26,8 @@
     ?>
 
     <h2>Execute function item</h2>
+    <?php
+    
+    ?>
 </body>
 </html>
