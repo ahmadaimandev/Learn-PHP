@@ -4,3 +4,8 @@ Update Array Items
 
 -> To update existing array items, you can refer to the index number for indexed arrays,
 and the key name for associative array.
+
+Update Array Items In ForEach Loop
+-> There are different technique to use when changing items value in a foreach loop:
+1. Insert & (and character) in the assignment to assign the item value by reference.
+2. 

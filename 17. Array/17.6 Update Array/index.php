@@ -28,7 +28,7 @@
 
     //Associative Array
     $CarsInfo = array("Brand" => "Ford", "Model" => "Mustang", "Year" => 1965);
-    $CarsInfo["Year"] = 1994;
+    $CarsInfo["Year"] = 2024;
     echo "<br>";
     var_dump($CarsInfo);
 
@@ -38,6 +38,17 @@
     }
     ?>
 
-
+    <h2>Update Array Items in ForEach Loop</h2>
+    <?php
+    $updateItem = array("Volvo", "BMW", "Toyota");
+    foreach ($cars as &$x) {
+        $x = "Ford";
+    }
+    unset($x);
+    /* to destroy a specified variable or variables, 
+    removing them from the symbol table and freeing up the memory they occupied 
+    */
+    var_dump($cars);
+    ?>
 </body>
 </html>
