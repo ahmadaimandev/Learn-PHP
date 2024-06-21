@@ -36,6 +36,26 @@
     var_dump( $CarList );
     ?>
 
-    <h3>Array Keys  </h3>
+    <h3>Array Keys</h3>
+    <?php
+    //Can have numbers or names
+    $indexCar = [
+        0 => "Proton",
+        1 => "Perodua",
+        2 => "Honda",
+    ];
+    
+    $Proton = [
+        "brand" => "Saga",
+        "Engine Capacity" => 1.3,
+        "Year" => 2022,
+    ];
+    var_dump( $Proton );
+    print_r($Proton);
+
+    echo "<br>";
+    array_push($indexCar,"Toyota", "Ferrari");
+    print_r($indexCar);
+    ?>
 </body>
 </html>
