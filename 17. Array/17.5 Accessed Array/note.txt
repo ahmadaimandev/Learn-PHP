@@ -1,0 +1,8 @@
+Lesson 17.5
+
+Accessed Array
+-> To access an array item, you can refer to the indexed arrays, and the key name
+for associative array.
+
+Double or Single quotes
+-> You can use both double and single quotes when accessing an array
