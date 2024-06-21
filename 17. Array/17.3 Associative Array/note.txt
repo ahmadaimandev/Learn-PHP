@@ -1,0 +1,7 @@
+Lesson 17.3 
+
+Associative Array
+- Associative array are arrays that use named keys that you assign to them.
+
+Access Associative Array
+- To access refer by a key name
