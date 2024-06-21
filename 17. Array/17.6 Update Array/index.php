@@ -32,9 +32,12 @@
     echo "<br>";
     var_dump($CarsInfo);
 
+    //Display in lopp
     foreach($CarsInfo as $x => $y) {
         echo "$x: $y <br>";
     }
     ?>
+
+
 </body>
 </html>
