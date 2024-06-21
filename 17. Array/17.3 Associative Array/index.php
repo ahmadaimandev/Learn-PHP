@@ -30,7 +30,9 @@
 
     <h3>Change Value Array</h3>
     <?php
-    
+    $car = array("Brand" => "Proton", "Model" => "Persona", "Year" => 2016, "Engine Capacity" => 1.6);
+    $car['Year'] = 2019;
+    var_dump($car);
     ?>
 </body>
 </html>
