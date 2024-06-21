@@ -21,6 +21,14 @@
     var_dump($NameList2);
     echo "<br>";
     var_dump($NameList);
+
+    //Array also can write in multiple line
+    $CarList = [
+        "Honda", 
+        "Bentley", 
+        "Rolls Royce", 
+        "Proton", //A comma after the last thing is allowed
+    ];
     ?>
 </body>
 </html>
