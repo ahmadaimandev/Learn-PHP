@@ -15,7 +15,12 @@
 <body>
     <h3>Create an array</h3>
     <?php
-    
+    $NameList = array("Ali", "Ahmad", "Abu", "Samad");
+    //Array also can be write in brackets
+    $NameList2 = ["Samad", "Zakaria", "Hidayah"];
+    var_dump($NameList2);
+    echo "<br>";
+    var_dump($NameList);
     ?>
 </body>
 </html>

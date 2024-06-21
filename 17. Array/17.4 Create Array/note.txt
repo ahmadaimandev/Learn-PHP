@@ -2,14 +2,25 @@ Lesson 17.4
 
 -> There's 2 way to write an arrays
 1. by using parentheses
+-> You can create arrays by using the array() function:
 $car = array("Proton");
 
 2. By using brackets
-$car = array["Proton"];
+-> You can also use a shorter syntax by using the [] brackets:
+$car = ["Proton"];
 
--> Write multiline in array:
+-> Write multiline in array
+-> Line breaks are not important, so an array declaration can span multiple lines:
 $car = array[
     "Proton",
     "Perodua",
     "Toyota",
-]
+];
+
+-> Trailing comma
+-> A comma after the last item is allowed:
+$car = array[
+    "Proton",
+    "Perodua",
+    "Toyota",
+];
