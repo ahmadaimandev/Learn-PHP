@@ -1,0 +1,6 @@
+Lesson 17.6
+
+Update Array Items
+
+-> To update existing array items, you can refer to the index number for indexed arrays,
+and the key name for associative array.
