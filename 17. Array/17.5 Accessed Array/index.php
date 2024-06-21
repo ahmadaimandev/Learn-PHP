@@ -40,10 +40,17 @@
     function myFunction2() {
         echo "This is my Second Function!";
     }
-
     $myArr1 = array("Car Brand" => "Volvo", "Years Manufactured" => 2019, "Message" => myFunction2());
+    //$myArr1["Car Brand"]();
+    ?>
 
-    $myArr1['Message']();
+    <h2>Loop Through associative array</h2>
+    <?php
+    //using foreach
+    $ArrayList = array("Brand" => "Ford", "Model" => "Mustang", "Year" => 1964);
+    foreach($ArrayList as $x => $y) {
+        echo "$x: $y <br>";
+    }
     ?>
 </body>
 </html>
