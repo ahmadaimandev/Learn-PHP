@@ -27,7 +27,23 @@
 
     <h2>Execute function item</h2>
     <?php
-    
+    function myFunction() {
+        echo "I come from a function";
+    }
+    $myArr = array("Volvo", 15, myFunction());
+
+    //$myArr[2]();
+    ?>
+
+    <h2>Execute Function by Referring to the key name</h2>
+    <?php
+    function myFunction2() {
+        echo "This is my Second Function!";
+    }
+
+    $myArr1 = array("Car Brand" => "Volvo", "Years Manufactured" => 2019, "Message" => myFunction2());
+
+    $myArr1['Message']();
     ?>
 </body>
 </html>
