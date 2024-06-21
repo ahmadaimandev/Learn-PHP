@@ -24,6 +24,12 @@
 
     <h3>Access Associative Array</h3>
     <?php
+    $car = array("Brand" => "Proton", "Model" => "Persona", "Year" => 2016, "Engine Capacity" => 1.6);
+    echo "Car Model:" .$car['Model'];
+    ?>
+
+    <h3>Change Value Array</h3>
+    <?php
     
     ?>
 </body>
