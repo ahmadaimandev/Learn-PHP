@@ -34,5 +34,14 @@
     $car['Year'] = 2019;
     var_dump($car);
     ?>
+
+    <h3>Looping In Array</h3>
+    <?php
+    $car = array("Brand" => "Proton", "Model" => "Persona", "Year" => 2016, "Engine Capacity" => 1.6);
+    $car['Year'] = 2019;
+    foreach ($car as $x => $y) {
+        echo "$x: $y <br>";
+    }
+    ?>
 </body>
 </html>
