@@ -21,7 +21,10 @@
 
     //To access items from an associative array, use the key name:
     $CarList = array("Brand" => "Proton", "Model" => "Bezza", "Engine Capacity" => 1.3);
-    echo "Output: ". $CarList['Brand'];
+    echo "Output: ". $CarList["Brand"] ."<br>"; //double quote
+    echo "Output: ". $CarList['Engine Capacity']; //single quote
     ?>
+
+    <h2>Execute function item</h2>
 </body>
 </html>
