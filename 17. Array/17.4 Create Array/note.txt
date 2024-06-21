@@ -1,0 +1,15 @@
+Lesson 17.4
+
+-> There's 2 way to write an arrays
+1. by using parentheses
+$car = array("Proton");
+
+2. By using brackets
+$car = array["Proton"];
+
+-> Write multiline in array:
+$car = array[
+    "Proton",
+    "Perodua",
+    "Toyota",
+]
