@@ -4,3 +4,7 @@ Remove Array Item
 -> To remove existing items from an array, you can use the array_splice() function.
 -> this function specify the index (where to start) and how many items you want to delete
 -> After deleting/remove, the array get reindexed automatically, starting at index 0.
+
+unset() function
+-> You can use unset() function to delete existing array
+-> But, it will not re-arrange the indexes.
