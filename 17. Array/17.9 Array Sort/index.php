@@ -20,7 +20,8 @@
     sort($CarsBrand);
     $CarLength = count($CarsBrand);
     for($x = 0; $x < $CarLength; $x++) {
-        
+        echo $CarsBrand[$x];
+        echo "<br>";
     }
     ?>  
 </body>
