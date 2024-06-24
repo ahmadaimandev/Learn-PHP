@@ -1,0 +1,3 @@
+Lesson 17.7
+
+Remove Array Item
