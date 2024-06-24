@@ -17,3 +17,8 @@ to delete multiple array items
 
 Remove item from associative array
 -> Use unset() function and specify the key of the item you want to delete.
+
+
+Using the array_diff function
+-> You can use this function to remove items from associative array
+-> This functions return a new array, without specified items.
