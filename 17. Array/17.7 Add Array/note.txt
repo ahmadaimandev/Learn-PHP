@@ -6,3 +6,7 @@ Add Array Item
 Associative Array
 -> To add items to an associative array, or key/value, use brackets[] for the key,
 and assign value with the = operator
+
+Add multiple array
+-> To add multiple array items into existing array, 
+use array_push() function
