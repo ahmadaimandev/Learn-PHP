@@ -12,12 +12,11 @@
         margin: 20px auto;
     }
 </style>
-<body>
     <h2>sort array ascending order - sort()</h2>
     <?php
     //Car array ascending in alphabetical order:
     $CarsBrand = array("BWM", "Mercedes", "Mustang", "Proton", "Geely", "Daihatsu");
-    $Number = array(12,4,6,5, 13,1);
+    $Number = array(34,24,12,10,6,9);
     sort($CarsBrand);
     $CarLength = count($CarsBrand);
     for($x = 0; $x < $CarLength; $x++) {
@@ -28,9 +27,14 @@
     sort($Number);
     $Numlength = count($Number); 
     for($x = 0; $x < $Numlength; $x++) {
-        echo $Number[$x];
+        echo $Number[$x]; //before sort, the number will stay in in ascending order
         echo "<br>";
     }
-    ?>  
-</body>
+    ?>
+
+    <h2>Sort array in descending order rsort()</h2>
+    <?php
+    
+    ?>
+</>
 </html>
