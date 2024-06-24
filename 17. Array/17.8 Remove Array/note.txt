@@ -14,3 +14,6 @@ Removing Multiple Array Item
 allows you to specify the numbers of items to delete.
 - unset() functions takes a unlimited number of arguments, and can therefore be used 
 to delete multiple array items
+
+Remove item from associative array
+-> Use unset() function and specify the key of the item you want to delete.

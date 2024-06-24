@@ -45,5 +45,12 @@
     unset($BoxOfFruits[1], $BoxOfFruits[2]);
     var_dump($BoxOfFruits);
     ?>
+
+    <h2>Remove item in associative array</h2>
+    <?php
+    $Cars = array("Brand" => "Ford", "Model" => "Mustang", "Year" => 1964);
+    unset($Cars['Model']);
+    var_dump($Cars);
+    ?>
 </body>
 </html>
