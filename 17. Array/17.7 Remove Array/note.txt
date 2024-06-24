@@ -1,3 +1,5 @@
 Lesson 17.7
 
 Remove Array Item
+-> To remove existing items from an array, you can use the array_splice() function.
+-> this function specify the index (where to start) and how many items you want to delete
