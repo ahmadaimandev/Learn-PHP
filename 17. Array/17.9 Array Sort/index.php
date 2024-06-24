@@ -34,7 +34,12 @@
 
     <h2>Sort array in descending order rsort()</h2>
     <?php
-    
+    rsort($Number);
+    $Numlength = count($Number); 
+    for($x = 0; $x < $Numlength; $x++) {
+        echo $Number[$x]; //before sort, the number will stay in in ascending order
+        echo "<br>";
+    }
     ?>
 </>
 </html>
