@@ -30,5 +30,13 @@
     $CarType ["Color"] = "Silver With Blue Stripe";
     var_dump( $CarType );
     ?>
+
+    <h2>Adding multiple array</h2>
+    <?php
+    //Add three items to the fruits array
+    $FruitList = array("Banana", "Watermelon", "Strawberry");
+    array_push($FruitList,"Peach", "Rockmelon", "Platano");
+    var_dump( $FruitList );
+    ?>
 </body>
 </html>
