@@ -10,3 +10,6 @@ and assign value with the = operator
 Add multiple array
 -> To add multiple array items into existing array, 
 use array_push() function
+
+Adding multiple item into associative array
+->
