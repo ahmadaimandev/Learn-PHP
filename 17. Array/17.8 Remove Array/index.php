@@ -24,5 +24,12 @@
     */
     var_dump($BoxOfFruits);
     ?>
+
+    <h2>Unset Function</h2>
+    <?php
+    $BoxOfFruits = array("Banana", "Platano", "Watermelon", "Orange", "Strawberry");
+    unset($BoxOfFruits[1]);
+    var_dump($BoxOfFruits);
+    ?>
 </body>
 </html>
