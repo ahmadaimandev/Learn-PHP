@@ -41,5 +41,7 @@
         echo "<br>";
     }
     ?>
-</>
+
+    <h2>Sort Array (Ascending Order), according to value- asort()</h2>
+<body/>
 </html>
