@@ -16,6 +16,11 @@
     <h2>Add Array</h2>
     <?php
     //use bracket to add new array into existing array
+
+    $fruits = array("Banana", "Watermelon", "Strawberry");
+    $fruits[] = "Orange";
+
+    var_dump($fruits); 
     ?>
 </body>
 </html>
