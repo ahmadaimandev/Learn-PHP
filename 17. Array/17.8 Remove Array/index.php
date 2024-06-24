@@ -63,7 +63,13 @@
     <h2>array_pop()</h2>
     <?php
     $BoxOfFruits = array("Banana", "Platano", "Watermelon", "Orange", "Strawberry");
-    array_pop($BoxOfFruits);
+    array_pop($BoxOfFruits); //remove last item
+    var_dump($BoxOfFruits);
+    ?>
+    <h2>array_shift()</h2>
+    <?php
+    $BoxOfFruits = array("Banana", "Platano", "Watermelon", "Orange", "Strawberry");
+    array_shift( $BoxOfFruits); //remove first item
     var_dump($BoxOfFruits);
     ?>
 </body>

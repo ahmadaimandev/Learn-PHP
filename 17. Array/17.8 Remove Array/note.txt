@@ -27,3 +27,6 @@ Using the array_diff function
 
 Remove the last item
 -> array_pop() functions removes the last item of an array
+
+Remove the first item
+->  array_shift() function removes the first item of the array
