@@ -52,5 +52,19 @@
     unset($Cars['Model']);
     var_dump($Cars);
     ?>
+
+    <h2>Using array_diff()</h2>
+    <?php
+    $Cars = array("Brand" => "Ford", "Model" => "Mustang", "Year" => 1964);
+    $newArray = array_diff($Cars,["Mustang", 1964]);
+    var_dump($newArray);
+    ?>
+
+    <h2>array_pop()</h2>
+    <?php
+    $BoxOfFruits = array("Banana", "Platano", "Watermelon", "Orange", "Strawberry");
+    array_pop($BoxOfFruits);
+    var_dump($BoxOfFruits);
+    ?>
 </body>
 </html>

@@ -22,3 +22,8 @@ Remove item from associative array
 Using the array_diff function
 -> You can use this function to remove items from associative array
 -> This functions return a new array, without specified items.
+-> The array_fiff() function  take values as parameter and not keys
+
+
+Remove the last item
+-> array_pop() functions removes the last item of an array
