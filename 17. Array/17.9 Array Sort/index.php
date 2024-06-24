@@ -13,6 +13,6 @@
     }
 </style>
 <body>
-    
+    <h2>sort array ascending order - sort()</h2>
 </body>
 </html>
