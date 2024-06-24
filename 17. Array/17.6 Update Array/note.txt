@@ -8,4 +8,7 @@ and the key name for associative array.
 Update Array Items In ForEach Loop
 -> There are different technique to use when changing items value in a foreach loop:
 1. Insert & (and character) in the assignment to assign the item value by reference.
-2. 
+2. And thereby making sure that any changes done with the array items inside the loop will b done 
+to the original array.
+
+-> Remember to use unset() function after loop

@@ -40,15 +40,14 @@
 
     <h2>Update Array Items in ForEach Loop</h2>
     <?php
-    $updateItem = array("Volvo", "BMW", "Toyota");
-    foreach ($cars as &$x) {
-        $x = "Ford";
+    //Change all the value to "Ford"
+    $CarName = array("Volvo", "BMW", "Toyota");
+    foreach ($CarName as &$UpdateCarName) {
+        $UpdateCarName = "Ford";
     }
-    unset($x);
-    /* to destroy a specified variable or variables, 
-    removing them from the symbol table and freeing up the memory they occupied 
-    */
-    var_dump($cars);
+    unset($UpdateCarName);
+    //unset() function used to destroy a specified variable or variables
+    var_dump($CarName);
     ?>
 </body>
 </html>
