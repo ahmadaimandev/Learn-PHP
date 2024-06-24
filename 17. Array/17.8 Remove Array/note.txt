@@ -8,3 +8,7 @@ Remove Array Item
 unset() function
 -> You can use unset() function to delete existing array
 -> But, it will not re-arrange the indexes.
+
+Removing Multiple Array Item
+-> To remove multiple array item, the array_splice() function takes a length of parameter that
+allows you to specify the numbers of items to delete.

@@ -31,5 +31,13 @@
     unset($BoxOfFruits[1]);
     var_dump($BoxOfFruits);
     ?>
+
+    <h2>Using array_splice() to remove multiple items</h2>
+    <?php
+    //remove 2 items, starting a the second item (index 1)
+    $BoxOfFruits = array("Banana", "Platano", "Watermelon", "Orange", "Strawberry");
+    array_splice($BoxOfFruits, 0,1);
+    var_dump($BoxOfFruits);
+    ?>
 </body>
 </html>
