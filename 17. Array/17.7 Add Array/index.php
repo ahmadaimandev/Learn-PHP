@@ -38,5 +38,13 @@
     array_push($FruitList,"Peach", "Rockmelon", "Platano");
     var_dump( $FruitList );
     ?>
+
+    <h2>Add Multiple items into Associative Array</h2>
+    <?php
+    //Add two items to the cars array:
+    $FordModel = array("Brand" => "Ford", "Model" => "Mustang", "Engine Capacity" => 2.8);
+    $FordModel += ["Color" => "Yellow", "Year" => 2024];
+    var_dump($FordModel);
+    ?>
 </body>
 </html>

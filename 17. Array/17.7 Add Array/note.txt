@@ -12,4 +12,4 @@ Add multiple array
 use array_push() function
 
 Adding multiple item into associative array
-->
+-> To add multiple items in associative array, you can use += operator
