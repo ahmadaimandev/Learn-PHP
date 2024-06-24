@@ -22,5 +22,13 @@
 
     var_dump($fruits); 
     ?>
+
+    <h2>Add array in associative array</h2>
+    <?php
+    //Add one item to the car array
+    $CarType = array("Brand" => "Ford", "Model" => "Mustang");
+    $CarType ["Color"] = "Silver With Blue Stripe";
+    var_dump( $CarType );
+    ?>
 </body>
 </html>
