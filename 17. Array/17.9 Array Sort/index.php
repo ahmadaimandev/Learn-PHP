@@ -14,5 +14,14 @@
 </style>
 <body>
     <h2>sort array ascending order - sort()</h2>
+    <?php
+    //Car array ascending in alphabetical order:
+    $CarsBrand = array("BWM", "Mercedes", "Mustang", "Proton", "Geely", "Daihatsu");
+    sort($CarsBrand);
+    $CarLength = count($CarsBrand);
+    for($x = 0; $x < $CarLength; $x++) {
+        
+    }
+    ?>  
 </body>
 </html>
