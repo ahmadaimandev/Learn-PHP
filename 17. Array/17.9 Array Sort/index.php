@@ -17,10 +17,18 @@
     <?php
     //Car array ascending in alphabetical order:
     $CarsBrand = array("BWM", "Mercedes", "Mustang", "Proton", "Geely", "Daihatsu");
+    $Number = array(12,4,6,5, 13,1);
     sort($CarsBrand);
     $CarLength = count($CarsBrand);
     for($x = 0; $x < $CarLength; $x++) {
         echo $CarsBrand[$x];
+        echo "<br>";
+    }
+
+    sort($Number);
+    $Numlength = count($Number); 
+    for($x = 0; $x < $Numlength; $x++) {
+        echo $Number[$x];
         echo "<br>";
     }
     ?>  
