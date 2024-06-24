@@ -36,7 +36,13 @@
     <?php
     //remove 2 items, starting a the second item (index 1)
     $BoxOfFruits = array("Banana", "Platano", "Watermelon", "Orange", "Strawberry");
-    array_splice($BoxOfFruits, 0,1);
+    array_splice($BoxOfFruits, 0,3);
+    var_dump($BoxOfFruits);
+    echo "<br>";
+    
+    //Remove first and second items:
+    $BoxOfFruits = array("Banana", "Platano", "Watermelon", "Orange", "Strawberry");
+    unset($BoxOfFruits[1], $BoxOfFruits[2]);
     var_dump($BoxOfFruits);
     ?>
 </body>

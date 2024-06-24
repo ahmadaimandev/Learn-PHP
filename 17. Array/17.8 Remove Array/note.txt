@@ -12,3 +12,5 @@ unset() function
 Removing Multiple Array Item
 -> To remove multiple array item, the array_splice() function takes a length of parameter that
 allows you to specify the numbers of items to delete.
+- unset() functions takes a unlimited number of arguments, and can therefore be used 
+to delete multiple array items
