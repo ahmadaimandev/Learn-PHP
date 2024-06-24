@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting In Array</title>
 </head>
+<style>
+    h2 {
+        text-align: center;
+        text-transform: capitalize;
+        margin: 20px auto;
+    }
+</style>
 <body>
     
 </body>
