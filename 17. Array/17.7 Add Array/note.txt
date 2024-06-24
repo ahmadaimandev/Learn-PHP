@@ -1,0 +1,4 @@
+Lesson 17.7
+
+Add Array Item
+-> To add array items to an existing array, you can use the bracket [] syntax
