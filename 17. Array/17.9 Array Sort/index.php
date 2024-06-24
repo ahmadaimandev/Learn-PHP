@@ -43,5 +43,14 @@
     ?>
 
     <h2>Sort Array (Ascending Order), according to value- asort()</h2>
+    <?php
+    $UserAge = array("Peter" => "35", "Ben Stiller" => "32", "Ryan Howard" => "45");
+    ksort($UserAge);
+
+    foreach($UserAge as $x => $x_value) {
+        echo "Name: " . $x . ", Age: " . $x_value;
+        echo "<br>";
+    }
+    ?>
 <body/>
 </html>
