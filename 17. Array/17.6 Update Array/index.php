@@ -47,6 +47,7 @@
     }
     unset($UpdateCarName);
     //unset() function used to destroy a specified variable or variables
+    //Remember to use unset() function after loop
     var_dump($CarName);
     ?>
 </body>
