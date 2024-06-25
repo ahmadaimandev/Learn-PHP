@@ -1,3 +1,8 @@
 Lesson 18.4 
 
 $_POST
+
+-> $_POST contain an array of variables received via the HTTPS POST method.
+-> there are two main ways to send variables via the HTTP post method:
+1. HTML forms
+2. Javascript http request
