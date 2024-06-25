@@ -1,0 +1,9 @@
+Lesson 18.1
+
+$GLOBALS
+-> is an array that contains all global variables.
+-> can be accessed from any scope.
+-> variable from outer scope are automatically global variable,and can used by any scope, 
+e.g inside a function
+-> to use global variables, inside a function you have either define them as global with the 
+global keyword, or refer to them by using $GLOBALS syntax
