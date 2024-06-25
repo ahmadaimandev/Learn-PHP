@@ -6,3 +6,7 @@ $_POST
 -> there are two main ways to send variables via the HTTP post method:
 1. HTML forms
 2. Javascript http request
+
+$_POST in html forms    
+-> A HTML form submits information via the HTTP POST method if the form's 
+attribute is set to "POST"
