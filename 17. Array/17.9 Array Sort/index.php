@@ -71,6 +71,24 @@
     }
     ?>
     <h2>sort array (descending order), according to value - arsort()</h2>
+    <?php
+    //sorts an associative array in descending order, according to the value:
+    $userAge = array("Peter" => "34", "Samad" => "12", "Ali" => "32");
+    arsort($userAge );
+    foreach($userAge as $x => $x_value) {
+        echo "Key=" . $x . ", Value=" . $x_value;
+        echo "<br>";
+    }
+    ?>
     <h2>sort array (descending order), according to key - krsort()</h2>
+    <?php
+    //sorts an associative array in descending order, according to the key:
+    $userAge = array("Peter" => "34", "Samad" => "12", "Ali" => "32");
+    krsort($userAge );
+    foreach($userAge as $x => $x_value) {
+        echo "Key=" . $x . ", Value=" . $x_value;
+        echo "<br>";
+    }
+    ?>
 <body/>
 </html>
