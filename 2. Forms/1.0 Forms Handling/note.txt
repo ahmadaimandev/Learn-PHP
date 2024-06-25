@@ -2,3 +2,17 @@ Lesson 2
 
 Form Handling
 -> The PHP superglobals $_GET and $_POST are used to collect form-data.
+
+GET vs POST
+-> Both GET and POST create an array. e.g:
+array(key1 => value1, key2 => value2...)
+-> This array holds key/value pairs. where keys are the names of the form control
+and values are the input data from the user.
+
+-> Both treated as $_GET and $_POST. these superglobals, which means that they are always
+accessible, regardless of scope - and you can access them from any function, class or file without
+having to do anything special.
+
+
+-> $_GET is an array of variables passed to the current script via the URL parameters.
+-> $_POST is an array of variables passed to the current script via HTTP POST method.
