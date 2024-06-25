@@ -36,7 +36,7 @@
     }
 </style>
 <body>
-    <h2>Using Javascript HTTP R>EQUEST</h2
+    <h2>Using Javascript HTTP R>EQUEST</h2>
     <button onclick="myFunction()">Click Me</button>
     <h1 id="demo"></h1>
 </body>
