@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$_GET request</title>
 </head>
+<style>
+    form {
+        width: 500px;
+        margin: 20px auto;
+        background-color: red;
+        height: 500px;
+    }
+</style>
 <body>
     <form action="getData.php" method="GET">
         <label for="uName">Username
