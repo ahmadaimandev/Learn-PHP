@@ -1,0 +1,17 @@
+Lesson 18.0
+
+Multidimensional Array
+
+-> Contain more than one array
+-> PHP supports multidimensional array that are two, three, four, five 
+or more levels deep. However, arrays more than three levels deep hard to manage 
+for most people.
+
+Dimension of array indicate the number of indices you need to select an element
+1. for a two-dimensional array, you need two indices to select an element
+2. for a three-dimensional array, you need three indices to select an element
+
+NOTE:
+A two-dimensional array is an array of arrays
+A three-dimensional array is an array of arrays of arrays
+
