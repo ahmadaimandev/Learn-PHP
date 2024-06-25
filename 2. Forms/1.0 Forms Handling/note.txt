@@ -1,0 +1,4 @@
+Lesson 2
+
+Form Handling
+-> The PHP superglobals $_GET and $_POST are used to collect form-data.
