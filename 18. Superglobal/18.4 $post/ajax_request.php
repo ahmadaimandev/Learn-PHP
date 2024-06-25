@@ -36,10 +36,19 @@
     }
 </style>
 <body>
-    <h2>Using Javascript HTTP REQUEST</h2>
+    <h2>Using Javascript HTTP R>EQUEST</h2
     <button onclick="myFunction()">Click Me</button>
+    <h1 id="demo"></h1>
 </body>
 <script>
-    
+    function myFunction() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "ajax_request.php");
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlended");
+        xhttp.onload =function() {
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+        xhttp.send("fname=Ahmad Aiman");
+    }
 </script>
 </html>
