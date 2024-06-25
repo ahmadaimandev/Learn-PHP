@@ -7,8 +7,8 @@
 </head>
 <body>
     <h2>POST Method</h2>
-    <div class="post-form">
-        <form action="getdata.php" method="POST">
+    <div class="get-form-body">
+        <form action="getdata.php" method="GET">
             <label for="Name">Username
                 <input type="text" name="Uname" required>
             </label>
