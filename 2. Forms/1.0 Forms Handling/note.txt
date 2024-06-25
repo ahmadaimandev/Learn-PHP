@@ -26,4 +26,10 @@ The limitation is about 2000 characters.
 - GET should NEVER be used for sending passwords or other sensitive information!
 
 When to use $_POST
-- 
+- Information sent from a form with the POST method is invisible to others
+- has no limits on the amount of information to send.
+- Moreover POST support advance functionality such as support for multi-part binary input   
+while uploading files to server.
+- because the variables are not displayed in the URL, it is not possible to bookmark the page
+
+NOTE: Developers prefer POST for sending form data.
