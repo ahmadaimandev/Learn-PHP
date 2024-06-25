@@ -32,6 +32,24 @@
     }
     ?>
     <h2>sort array descending order - rsort()</h2>
+    <?php
+    //sort array in descending order
+    $CarBrand = array("BWM", "Volvo", "Toyota");
+    rsort( $CarBrand );
+    $CarLength = count( $CarBrand);
+    for($x = 0; $x < $CarLength; $x++) {
+        echo $CarBrand[$x];
+        echo "<br>";    
+    }
+    //sort number in descending order
+    $NumList = array(5,7,10,12,45);
+    rsort( $NumList );
+    $NumLength = count( $NumList);
+    for($x = 0; $x < $NumLength; $x++) {
+        echo $NumList[$x];
+        echo "<br>";
+    }
+    ?>
     <h2>sort array (ascending order), according to value - asort()</h2>
     <h2>sort array (ascending order), according to key - ksort()</h2>
     <h2>sort array (descending order), according to value - arsort()</h2>
