@@ -21,8 +21,19 @@
     display: block; /* Make the button a block element */
     margin: 50px auto; /* Center the button horizontally */
     text-align: center; /* Center the text inside the button */
+    transition: 0.4s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
     }
 
+    button:hover {
+    border: 1px solid;
+    box-shadow: 4px 4px;
+    cursor: pointer;
+    }
 </style>
 <body>
     <h2>Using Javascript HTTP REQUEST</h2>
