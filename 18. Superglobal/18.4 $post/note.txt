@@ -10,3 +10,7 @@ $_POST
 $_POST in html forms    
 -> A HTML form submits information via the HTTP POST method if the form's 
 attribute is set to "POST"
+
+$_POST in Javascript HTTP request
+-> When sending a HTTP request in Javascript, you can specify that the 
+HTTP method is post

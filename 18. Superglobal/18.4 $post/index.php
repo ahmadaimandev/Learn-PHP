@@ -15,6 +15,20 @@
 </style>
 <body>
     <h2>$_POST in HTML Forms</h2>
-    <form action="" method="post"></form>
+    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        Name: <input type="text" name="fname">
+        <input type="submit">
+    </form>
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = htmlspecialchars($_POST['fname']);
+        if (empty($name)) {
+            echo "Name is empty";
+        } else {
+            echo $name;
+        }
+    }
+    ?>
 </body>
 </html>
