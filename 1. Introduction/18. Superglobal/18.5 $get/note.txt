@@ -1,3 +1,7 @@
 Lesson 18.5
 
 $_GET
+->  contains an array of variables received via HTTP GET method
+-> there are two main ways to send variables via HTTP GET method:
+1. query strings in the URL
+2. HTML forms
