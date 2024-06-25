@@ -1,0 +1,21 @@
+Lesson 18
+
+PHP superglobal
+
+- Were introduced in PHP 4.1.0, and are built-in variables that are always available
+in all scopes.
+
+- Some predefined variables in php are 'superglobals' which mean that they are always 
+accessible, regardless of scope - and you can access they from any functions,
+class or file without having to do anything special.
+
+PHP superglobal variables are:
+- $GLOBALS
+- $_SERVER
+- $_REQUEST
+- $_POST
+- $_GET
+- $_FILES
+- $_ENV
+- $_COOKIE
+- $_SESSION
