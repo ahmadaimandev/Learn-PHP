@@ -1,0 +1,10 @@
+Lesson 18.3
+
+$request
+-> is PHP super global variable which contains submitted form data, and all cookie data.
+-> In other words, $_REQUEST is an array containing data from $_GET, $_POST and $_COOKIE.
+-> you can access this data with the $_REQUEST keyword followed by the name of the form field,
+or cookie or like this
+
+E.G:
+$_REQUEST['firstname']
