@@ -1,0 +1,10 @@
+Lesson 15
+
+PHP Loops
+
+Type of loops:
+-> while = loop through the block of code as long as the specified condition is true
+-> do..while = loop through the block of code once, and the repeats the loops as long as the 
+specified condition is true
+-> for = loops through the block of code a specified number of times.
+-> foreach = loop through block of code each element in array
