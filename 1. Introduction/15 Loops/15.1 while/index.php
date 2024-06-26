@@ -9,6 +9,9 @@
     h2 {
         text-align: center;
         margin: 20px auto;
+        background-color: black;
+        color: white;
+        width: 700px
     }
     p {
         text-align: center;
@@ -40,5 +43,7 @@
         echo "<br>";
     }
     ?>
+
+    <h2>The continue statement</h2>
 </body>
 </html>
