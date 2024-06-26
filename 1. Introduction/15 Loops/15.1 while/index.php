@@ -45,5 +45,6 @@
     ?>
 
     <h2>The continue statement</h2>
+    <p></p>
 </body>
 </html>

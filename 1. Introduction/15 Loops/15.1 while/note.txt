@@ -1,3 +1,12 @@
 Lesson 15.1 
 
 While loop
+-> while loops execute a block of codes as long as the specified 
+condition is true.
+
+NOTE: remember to increment $i, or else the loop will continue forever.
+
+-> while loops does not run specific numbers of times, but check after iteration
+of the condition is still true.
+-> condition does not have to be counter, it could be the status of an operation or any condition
+that evaluates to either true or false.
