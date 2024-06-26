@@ -34,6 +34,7 @@
     $x = 1;
     while($x < 6) {
         if ($x == 3) break;
+        //Stop the loop when $i is 3
         echo $x;
         $x++;
         echo "<br>";
