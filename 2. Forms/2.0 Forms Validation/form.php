@@ -139,15 +139,15 @@
 
     <?php
     echo "<h2>Your Input:</h2>";
-    echo $name;
+    echo $Username;
     echo "<br>";
-    echo $email;
+    echo $UserEmail;
     echo "<br>";
-    echo $website;
+    echo $UserWebsite;
     echo "<br>";
-    echo $comment;
+    echo $UserComment;
     echo "<br>";
-    echo $gender;
+    echo $UserGender;
     ?>
 </body>
 </html>
