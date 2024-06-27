@@ -119,14 +119,13 @@
     
     <?php
     #define variable and set an empty value
-    $Username = $UserEmail = $UserWebsite = $UserComment = $UserGender = " ";
+    $Username = $UserEmail = $UserWebsite = $UserGender= $UserComment = " ";
     
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         $Username = $_POST["Username"];
         $UserEmail = $_POST["UserEmail"];
         $UserWebsite = $_POST["UserWebsite"];
         $UserComment = $_POST["UserComment"];
-        $UserGender = $_POST["UserGender"];
     }
 
     function test_input($data   ) {
