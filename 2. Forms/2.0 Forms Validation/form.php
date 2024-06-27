@@ -128,6 +128,13 @@
         $UserComment = $_POST["UserComment"];
         $UserGender = $_POST["UserGender"];
     }
+
+    function test_input($data   ) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
     ?>
 </body>
 </html>
