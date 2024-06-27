@@ -1,2 +1,5 @@
 Lesson 2.0 Form Validation
 
+What is $_SERVER["PHP_SELF"] variable
+- 
+

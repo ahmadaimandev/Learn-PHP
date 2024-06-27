@@ -6,13 +6,9 @@
     <title>Form Validation</title>
 </head>
 <style>
-    form {
-        background-color: red;
-    }
+
 </style>
 <body>
-    <?php
-    
-    ?>
+    <form method="post" action=""></form>
 </body>
 </html>
