@@ -45,6 +45,15 @@
     ?>
 
     <h2>The continue statement</h2>
-    <p></p>
+    <p>With the continue statement we can stop the current iteration, and continue with the next</p>
+    <?php
+    $loopNum = 1;
+    while($loopNum < 20) {
+        if ($loopNum == 15) continue;
+        $loopNum++;
+        echo $loopNum;
+        echo "<br>";
+    }
+    ?>
 </body>
 </html>
