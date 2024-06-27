@@ -168,16 +168,12 @@
     ?>
     <div class="output">
     <?php
-    echo "<h2>Your Output From the form:</h2>";
-    echo $Username;
-    echo "<br>";
-    echo $UserEmail;
-    echo "<br>";
-    echo $UserWebsite;
-    echo "<br>";
-    echo $UserComment;
-    echo "<br>";
-    echo $UserGender;
+    echo "<h2>Your Input:</h2>";
+    echo "<p><span class='label'>Name:</span> " . $Username . "</p>";
+    echo "<p><span class='label'>Email:</span> " . $UserEmail . "</p>";
+    echo "<p><span class='label'>Website:</span> " . $UserWebsite . "</p>";
+    echo "<p><span class='label'>Comment:</span> " . $UserComment . "</p>";
+    echo "<p><span class='label'>Gender:</span> " . $UserGender . "</p>";
     ?>
     </div>
 </body>
