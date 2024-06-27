@@ -9,3 +9,7 @@ What is htmlspecialchars() function
 - function converts characters into html entities
 - this mean it will replace HTML character like < and > with &alt; and &gt; 
 - this prevent attackers from exploiting the code by injecting html or javascript code (crosssite scripting attacts)
+
+
+warning
+-  $_SERVER["PHP_SELF"] variable can be used by hacker
