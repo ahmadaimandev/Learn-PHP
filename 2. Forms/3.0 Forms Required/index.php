@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Forms Required</title>
 </head>
+<style>
+    html {
+        font-family: "Poppins", sans-serif;
+    }
+</style>
 <body>
     <?php
     //define variables and set to empty values
@@ -68,7 +73,12 @@
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <div class="user-info">
                 <label for="UserName"><b>Username</b>
-
+                    <input type="text" name="Username">
+                    <span class="error">* <?php echo $UsernameErr;?></span>
+                </label>
+                <label for="email">Email:
+                    <input type="email" name="UserEmail">
+                    <span class="error">* <?php echo $UserEmailErr;?></span>
                 </label>
             </div>
             <div class="user-comment"></div>
