@@ -9,6 +9,11 @@
 
 </style>
 <body>
-    <form method="post" action=""></form>
+    <form action="post">
+        <label for="useName">Name:
+            <input type="text" name="username" required>
+        </label>
+        <label for="userEmail"></label>
+    </form>
 </body>
 </html>
