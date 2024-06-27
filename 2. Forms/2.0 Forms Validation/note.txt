@@ -1,5 +1,11 @@
 Lesson 2.0 Form Validation
 
 What is $_SERVER["PHP_SELF"] variable
-- 
+- is a super global variable that returns the filename of the currently executing script.
+- sends the submitted form data to the page itself, instead of jumping to a different page. 
+This way, the user will get error messages on the same page as the form.
 
+What is htmlspecialchars() function
+- function converts characters into html entities
+- this mean it will replace HTML character like < and > with &alt; and &gt; 
+- this prevent attackers from exploiting the code by injecting html or javascript code (crosssite scripting attacts)
