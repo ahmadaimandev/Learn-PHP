@@ -56,7 +56,12 @@
 
     <div class="form-background">
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            
+            <div class="user-info">
+                
+            </div>
+            <div class="user-comment"></div>
+            <div class="user-gender"></div>
+            <div class="button-submit"></div>
         </form>
     </div>
 </body>
