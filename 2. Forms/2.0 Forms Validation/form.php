@@ -177,6 +177,6 @@
     echo "<p><span class='label'>Comment:</span> " . $UserComment . "</p>";
     echo "<p><span class='label'>Gender:</span> " . $UserGender . "</p>";
     ?>
-    </div>
+    </div> 
 </body>
 </html>
