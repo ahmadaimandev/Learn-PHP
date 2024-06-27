@@ -126,6 +126,7 @@
         $UserEmail = $_POST["UserEmail"];
         $UserWebsite = $_POST["UserWebsite"];
         $UserComment = $_POST["UserComment"];
+        $UserGender = $_POST[""];
     }
 
     function test_input($data   ) {
