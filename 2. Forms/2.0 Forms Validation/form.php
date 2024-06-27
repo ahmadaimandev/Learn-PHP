@@ -63,7 +63,7 @@
         }
 
         input[type="submit"] {
-            background-color: #5cb85c;
+            background-color: #3DC2EC;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -72,16 +72,18 @@
             display: block;
             margin: 20px auto;
             width: 200px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         input[type="submit"]:hover {
-            background-color: #4cae4c;
+            background-color: #4B70F5;
         }
 </style>
 <body>
     <div class="form-background">
         <h3>Form Validation</h3>
-        <form method="post" action="">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <label for="username">Name:
                 <input type="text" id="username" name="Username">
             </label>
@@ -114,5 +116,18 @@
             <input type="submit" value="Submit Form">
         </form>
     </div>
+    
+    <?php
+    #define variable and set an empty value
+    $Username = $UserEmail = $UserWebsite = $UserComment = $UserGender = " ";
+    
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+        $Username = $_POST["Username"];
+        $UserEmail = $_POST["UserEmail"];
+        $UserWebsite = $_POST["UserWebsite"];
+        $UserComment = $_POST["UserComment"];
+        $UserGender = $_POST["UserGender"];
+    }
+    ?>
 </body>
 </html>
