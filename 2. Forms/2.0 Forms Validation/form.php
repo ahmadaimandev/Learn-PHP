@@ -8,15 +8,79 @@
 </head>
 <style>
     html {
-        font-family:Verdana, Geneva, Tahoma, sans-serif
+        font-family: Verdana, Geneva, Tahoma, sans-serif
     }
-    body {
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
 
-        .form-background {
+    body {
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-background {
+        background-color: #fff;
+        padding: 20px;
+        max-width: 500px;
+        margin: 50px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    h3 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin: 8px 0 5px;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    fieldset {
+        border: none;
+        padding: 0;
+        margin: 15px 0;
+    }
+
+    legend {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: #3DC2EC;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+        width: 200px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #4B70F5;
+    }
+    .output {
             background-color: #fff;
             padding: 20px;
             max-width: 500px;
@@ -25,65 +89,27 @@
             border-radius: 10px;
         }
 
-        h3 {
+        .output h2 {
             text-align: center;
             color: #333;
         }
 
-        label {
-            display: block;
-            margin: 8px 0 5px;
-            color: #333;
+        .output p {
+            margin: 10px 0;
+            color: #555;
         }
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        fieldset {
-            border: none;
-            padding: 0;
-            margin: 15px 0;
-        }
-
-        legend {
+        .output .label {
             font-weight: bold;
-            margin-bottom: 10px;
             color: #333;
-        }
-
-        input[type="radio"] {
-            margin-right: 10px;
-        }
-
-        input[type="submit"] {
-            background-color: #3DC2EC;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: block;
-            margin: 20px auto;
-            width: 200px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #4B70F5;
         }
 </style>
+
 <body>
+
     <div class="form-background">
         <h3>Form Validation</h3>
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <label for="username">Name:
                 <input type="text" id="username" name="Username">
             </label>
@@ -116,29 +142,33 @@
             <input type="submit" value="Submit Form">
         </form>
     </div>
-    
+
     <?php
-    #define variable and set an empty value
-    $Username = $UserEmail = $UserWebsite = $UserGender= $UserComment = " ";
-    
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
-        $Username = $_POST["Username"];
-        $UserEmail = $_POST["UserEmail"];
-        $UserWebsite = $_POST["UserWebsite"];
-        $UserComment = $_POST["UserComment"];
-        $UserGender = $_POST[""];
+    # Define variables and set them to empty values
+    $Username = $UserEmail = $UserWebsite = $UserGender = $UserComment = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $Username = test_input($_POST["Username"]);
+        $UserEmail = test_input($_POST["UserEmail"]);
+        $UserWebsite = test_input($_POST["UserWebsite"]);
+        $UserComment = test_input($_POST["UserComment"]);
+        $UserGender = isset($_POST["UserGender"]) ? test_input($_POST["UserGender"]) : "";
     }
 
-    function test_input($data   ) {
+    function test_input($data)
+    {
+        if ($data === null) {
+            return "";
+        }
         $data = trim($data);
         $data = stripslashes($data);
         $data = htmlspecialchars($data);
         return $data;
     }
     ?>
-
+    <div class="output">
     <?php
-    echo "<h2>Your Input:</h2>";
+    echo "<h2>Your Output From the form:</h2>";
     echo $Username;
     echo "<br>";
     echo $UserEmail;
@@ -149,5 +179,6 @@
     echo "<br>";
     echo $UserGender;
     ?>
+    </div>
 </body>
 </html>
