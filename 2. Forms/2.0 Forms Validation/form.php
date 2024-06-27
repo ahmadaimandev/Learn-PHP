@@ -161,7 +161,9 @@
             return "";
         }
         $data = trim($data);
+        #Strip unnecessary characters (extra space, tab, newline) from the user input data (with the PHP trim() function)
         $data = stripslashes($data);
+        #Remove backslashes \ from the user input data (with the PHP stripslashes() function)
         $data = htmlspecialchars($data);
         return $data;
     }
