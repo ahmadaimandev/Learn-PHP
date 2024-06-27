@@ -52,16 +52,25 @@
             $UserWebsite = test_input($_POST["UserWebsite"]);
         }
     }
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
     ?>
 
     <div class="form-background">
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <div class="user-info">
-                
+
             </div>
             <div class="user-comment"></div>
             <div class="user-gender"></div>
-            <div class="button-submit"></div>
+            <div class="button-submit">
+                <input type="Submit" value="Submit Form Application">
+            </div>
         </form>
     </div>
 </body>
