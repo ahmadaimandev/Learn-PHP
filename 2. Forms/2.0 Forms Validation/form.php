@@ -9,8 +9,11 @@
     
 </style>
 <body>
+    <form method="post" action="
     <?php
-    
-    ?>
+    echo ""
+    ?>">
+
+    </form>
 </body>
 </html>
