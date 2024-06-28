@@ -59,7 +59,7 @@
 
     <h2>Form Validation</h2>
     <div class="form-background">
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF  "])?>">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>">
             <div class="user-info">
                 <label for="User_Name">Username:
                     <input type="text" name="name" placeholder="Please enter your name">
@@ -78,10 +78,16 @@
                 </label>
                 <fieldset>
                     <legend>Choose your gender:</legend>
-                    
+                    <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+                    <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+                    <label for="other"><input type="radio" id="other" name="gender" value="other"> Other</label>
                 </fieldset>
+                <input type="submit" value="Submit Form">
             </div>
         </form>
+        <div class="output-form">
+            
+        </div>
     </div>
 </body>
 </html>
