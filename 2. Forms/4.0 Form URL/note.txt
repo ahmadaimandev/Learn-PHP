@@ -1,1 +1,12 @@
 Lesson 4.0 Form URL
+
+PHP Validate Name
+
+The code below shows a simple way to check if the name field only contains letters, dashes, apostrophes and whitespaces. 
+If the value of the name field is not valid, then store an error message:
+
+code:
+$name = test_input($_POST["name"]);
+if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+  $nameErr = "Only letters and white space allowed";
+}
