@@ -10,99 +10,107 @@
     <title>Forms Required</title>
 </head>
 <style>
+    html {
+        font-family: "Poppins", sans-serif;
+    }
     body {
-        font-family: Arial, sans-serif;
-        background-color: #f9f9f9;
-        margin: 0;
-        padding: 0;
-    }
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
 
-    h2 {
-        text-align: center;
-        color: #333;
-    }
+h2 {
+    text-align: center;
+    color: #333;
+}
 
-    .form-background {
-        background-color: #fff;
-        margin: 20px auto;
-        padding: 20px;
-        border-radius: 10px;
-        max-width: 600px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+.form-background {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-    form {
-        display: flex;
-        flex-direction: column;
-    }
+.user-info label {
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+}
 
-    .user-info label {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 15px;
-        font-weight: bold;
-    }
+.user-info label span {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
-    .user-info input[type="text"],
-    .user-info input[type="email"],
-    .user-info textarea {
-        margin-top: 5px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        font-size: 14px;
-    }
+.user-info input[type="text"],
+.user-info input[type="email"],
+.user-info textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-    .user-info input[type="radio"] {
-        margin-right: 5px;
-    }
+.user-info textarea {
+    resize: vertical;
+}
 
-    fieldset {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        margin-bottom: 15px;
-    }
+.user-info .error {
+    color: red;
+    font-size: 0.875em;
+}
 
-    legend {
-        font-weight: bold;
-    }
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
 
-    .error {
-        color: red;
-        font-size: 12px;
-        margin-top: 5px;
-    }
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
 
-    input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-    }
+.user-info input[type="radio"] {
+    margin-right: 5px;
+}
 
-    input[type="submit"]:hover {
-        background-color: #45a049;
-    }
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
-    .output-form {
-        margin-top: 20px;
-        padding: 10px;
-        background-color: #e9e9e9;
-        border-radius: 5px;
-    }
+input[type="submit"]:hover {
+    background: #4cae4c;
+}
 
-    .output-form h2 {
-        font-size: 18px;
-        color: #333;
-    }
+.output-form {
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
 
-    .output-form p {
-        font-size: 16px;
-    }
+.output-form h2 {
+    color: #333;
+}
+
+.output-form p {
+    color: #555;
+}
 </style>
 
 <body>
@@ -175,9 +183,16 @@
                 </label>
                 <fieldset>
                     <legend>Choose your gender:</legend>
-                    <label for="male">Male
-                        <input type="radio" id="male" name="gender" value="male">
-                    </label>
+                    <div class="radio-button">
+                    <input type="radio" 
+                    id="male" 
+                    name="gender" 
+                    value="male">
+                    <label for="male">Male</label>
+                    </div>
+                    <div class="radio-button"></div>
+                    <div class="radio-button"></div>
+                    
                     <label for="female">Female
                         <input type="radio" id="female" name="gender" value="female">
                     </label>
