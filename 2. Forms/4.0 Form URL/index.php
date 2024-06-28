@@ -13,82 +13,108 @@
     html {
         font-family: "Open Sans", sans-serif;
     }
-    /* Container */
-    .login-container {
-        width: 300px;
-        margin: 100px auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        background-color: #f9f9f9;
-    }
+   /* Container */
+.login-container {
+    width: 300px;
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
 
-    /* Title */
-    .login-title {
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+/* Title */
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-    /* Input fields */
-    .user-input {
-        margin-bottom: 20px;
-    }
+/* Input fields */
+.user-input {
+    margin-bottom: 20px;
+}
 
-    .name-label,
-    .email-label {
-        display: block;
-        margin-bottom: 10px;
-    }
+.name-label,
+.email-label,
+.website-label,
+.password-label {
+    display: block;
+    margin-bottom: 10px;
+}
 
-    label {
-        font-weight: bold;
-        display: block;
-        margin-bottom: 5px;
-    }
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
 
-    input[type="text"],
-    input[type="email"],
-    select {
-        width: calc(100% - 1px);
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: calc(100% - 0px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
-    /* Role dropdown */
-    .role {
-        margin-bottom: 20px;
-    }
+/* Job Role and Department dropdown */
+.job-role,
+.department-role {
+    margin-bottom: 20px;
+}
 
-    select {
-        width: 100%;
-    }
+select {
+    width: 100%;
+}
 
-    /* Button */
-    .button {
-        margin: 10px auto;
-        text-align: center;
-    }
+/* Button */
+.button {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-    input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: #4CAF50;
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-    input[type="submit"]:hover {
-        background-color: #45a049;
-    }
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Forgot Password and Create New Account */
+.forgot-password {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgot-password p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.forgot-password a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: #45a049;
+}
+
 </style>
 
 <body>
@@ -99,6 +125,9 @@
         $data = htmlspecialchars($data);
         return $data;
     }
+
+    $usernameErr = $emailErr = $websiteErr = $passwordErr = "";
+    $username = $email = $website = $password = "";
     ?>
     <div class="login-container">
         <h1 class="login-title">Login</h1>
@@ -118,9 +147,9 @@
                 </div>
             </div>
             <div class="job-role">
-                <label for="User_Role">Select Your Role:
+                <label for="User_Role">Role:
                     <select name="role" id="dropdown">
-                        <option value="">--Your Role:--</option>
+                        <option value="">--Select Your Role:--</option>
                         <option value="admin">Administrator</option>
                         <option value="doctor">Doctor</option>
                         <option value="nurse">Nurse</option>
@@ -129,9 +158,9 @@
                 </label>
             </div>
             <div class="department-role">
-                <label for="User_Role">Select Your Department:
+                <label for="User_Role">Department:
                     <select name="role" id="dropdown">
-                        <option value="">--Your Department:--</option>
+                        <option value="">--Select Your Department:--</option>
                         <option value="deptAdmin">Department of Administrator</option>
                         <option value="deptDoctor">Department of Doctor</option>
                         <option value="deptNurse">Department of Nurse</option>
