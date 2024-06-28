@@ -136,6 +136,14 @@ input[type="submit"]:hover {
         if(empty($_POST["username"])) {
             $usernameErr = "*Username cannot be blanked";
         }
+
+        if(empty($_POST["email"])) {
+            $emailErr = "*Email cannot be blanked";
+        }
+
+        if(empty($_POST[""])) {
+            $emailErr = "*Email cannot be blanked";
+        }
     }
     ?>
     <div class="login-container">
