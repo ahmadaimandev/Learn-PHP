@@ -140,9 +140,22 @@ input[type="submit"]:hover {
         if(empty($_POST["email"])) {
             $emailErr = "*Email cannot be blanked";
         }
-
         if(empty($_POST[""])) {
             $emailErr = "*Email cannot be blanked";
+        }else {
+            $email = LoginFunction($_POST["email"]);
+            //check if email address is well formed
+            if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
+                $emailErr = "Invalid email format";
+            }
+        }
+
+        if(empty($_POST["website"])) {
+            $website = "";
+        }else {
+            //check if the URL address syntax is valid (this regular expression also allows dashes in URL)
+        }if(preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i", $website)) {
+            $websiteErr = "Invalid URL";
         }
     }
     ?>
