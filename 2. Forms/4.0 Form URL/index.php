@@ -198,12 +198,6 @@
             </div>
         </form>
     </div>
-
-    <div class="output-card">
-        <h1 class="output-title">User Details</h1>
-        <div class="output-content">
-        </div>
-    </div>
 </body>
 
 </html>
