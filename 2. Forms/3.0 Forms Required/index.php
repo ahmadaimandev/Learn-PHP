@@ -190,15 +190,22 @@ input[type="submit"]:hover {
                     value="male">
                     <label for="male">Male</label>
                     </div>
-                    <div class="radio-button"></div>
-                    <div class="radio-button"></div>
-                    
-                    <label for="female">Female
-                        <input type="radio" id="female" name="gender" value="female">
-                    </label>
-                    <label for="other">Other
-                        <input type="radio" id="other" name="gender" value="other">
-                    </label>
+
+                    <div class="radio-button">
+                    <input type="radio" 
+                    id="female" 
+                    name="gender" 
+                    value="female">
+                    </div>
+                    <label for="female">Female</label>
+                    <div class="radio-button">
+
+                    <input type="radio" 
+                    id="other" 
+                    name="gender" 
+                    value="other">
+                    <label for="other">Other</label>
+                    </div>
                 </fieldset>
                 <input type="submit" value="Submit Form">
             </div>
