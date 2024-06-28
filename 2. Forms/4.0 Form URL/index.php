@@ -115,6 +115,9 @@ input[type="submit"]:hover {
     color: #45a049;
 }
 
+.error {
+    color: red;
+}
 </style>
 
 <body>
