@@ -147,51 +147,6 @@
 </style>
 
 <body>
-    <?php
-    $usernameErr = $emailErr = $websiteErr = $passwordErr = "";
-    $username = $email = $website = $password = $role = $department = "";
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (empty($_POST["username"])) {
-            $usernameErr = "Name is required";
-        } else {
-            $username = LoginFunction($_POST["username"]);
-            // check if name only contains letters and whitespace
-            if (!preg_match("/^[a-zA-Z-' ]*$/", $username)) {
-                $usernameErr = "Only letters and white space allowed";
-            }
-        }
-
-        if (empty($_POST["email"])) {
-            $emailErr = "Email is required";
-        } else {
-            $email = LoginFunction($_POST["email"]);
-            // check if e-mail address is well-formed
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $emailErr = "Invalid email format";
-            }
-        }
-
-        if (empty($_POST["website"])) {
-            $website = "";
-        } else {
-            $website = test_input($_POST["website"]);
-            // check if URL address syntax is valid
-            if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i", $website)) {
-                $websiteErr = "Invalid URL";
-            }
-        }
-    }
-
-    function LoginFunction($data)
-    {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
-    ?>
-
     <div class="login-container">
         <h1 class="login-title">Login</h1>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
@@ -247,15 +202,6 @@
     <div class="output-card">
         <h1 class="output-title">User Details</h1>
         <div class="output-content">
-            <?php
-            echo "<h2>Your Input:</h2>";
-            echo "<p><strong>Username:</strong> " . htmlspecialchars($username) . "</p>";
-            echo "<p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>";
-            echo "<p><strong>Website:</strong> " . htmlspecialchars($website) . "</p>";
-            echo "<p><strong>Role:</strong> " . htmlspecialchars($website) . "</p>";
-            echo "<p><strong>Department:</strong> " . htmlspecialchars($website) . "</p>";
-            echo "<p><strong>Password:</strong> " . htmlspecialchars($password) . "</p>";
-            ?>
         </div>
     </div>
 </body>
