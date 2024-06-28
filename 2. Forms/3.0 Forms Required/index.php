@@ -26,7 +26,7 @@
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if(empty($_POST["name"])) {
-            $nameErr = "Username is required";
+            $nameErr = "Name is required";
         } else {
             $name = test_input($_POST["name"]);
         }
@@ -60,7 +60,27 @@
     <h2>Form Validation</h2>
     <div class="form-background">
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF  "])?>">
-            
+            <div class="user-info">
+                <label for="User_Name">Username:
+                    <input type="text" name="name" placeholder="Please enter your name">
+                    <span class="error"><?php echo $nameErr;?></span>
+                </label>
+                <label for="User_Email">Email:
+                    <input type="email" name="email" placeholder="Please enter your email:">
+                    <span class="error"><?php echo $emailErr;?></span>
+                </label>
+                <label for="User_Website">Website:
+                    <input type="text" name="website" placeholder="Enter your website address">
+                    <span class="error"><?php echo $websiteErr;?></span>
+                </label>
+                <label for="User_Comment">Please leave your comment here:
+                    <textarea name="comment" placeholder="Feedback..." rows="5" cols="40"></textarea>
+                </label>
+                <fieldset>
+                    <legend>Choose your gender:</legend>
+                    
+                </fieldset>
+            </div>
         </form>
     </div>
 </body>
