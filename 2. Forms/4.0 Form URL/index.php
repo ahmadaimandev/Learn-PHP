@@ -113,7 +113,7 @@
     }
 
     .forgot-password a:hover {
-        color: #45a049;
+        color: blue;
     }
 
     .error {
@@ -148,14 +148,6 @@
 
 <body>
     <?php
-    function LoginFunction($data)
-    {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
-
     $usernameErr = $emailErr = $websiteErr = $passwordErr = "";
     $username = $email = $website = $password = $role = $department = "";
 
@@ -189,6 +181,14 @@
                 $websiteErr = "Invalid URL";
             }
         }
+    }
+
+    function LoginFunction($data)
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
     }
     ?>
 
