@@ -119,6 +119,31 @@
     .error {
         color: red;
     }
+
+    .output-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .output-title {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .output-content {
+        text-align: left;
+        color: #555;
+    }
+
+    .output-content h2 {
+        margin-bottom: 10px;
+        color: #444;
+    }
 </style>
 
 <body>
@@ -232,18 +257,18 @@
     </div>
 
     <div class="output-card">
-        <h1 class="output-title"></h1>
+        <h1 class="output-title">User Details</h1>
+        <div class="output-content">
             <?php
             echo "<h2>Your Input:</h2>";
-            echo $username;
-            echo "<br>";
-            echo $email;
-            echo "<br>";
-            echo $website;
-            echo "<br>";
-            echo $password;
-            echo "<br>";
+            echo "<p><strong>Username:</strong> " . htmlspecialchars($username) . "</p>";
+            echo "<p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>";
+            echo "<p><strong>Website:</strong> " . htmlspecialchars($website) . "</p>";
+            echo "<p><strong>Role:</strong> " . htmlspecialchars($website) . "</p>";
+            echo "<p><strong>Department:</strong> " . htmlspecialchars($website) . "</p>";
+            echo "<p><strong>Password:</strong> " . htmlspecialchars($password) . "</p>";
             ?>
+        </div>
     </div>
 </body>
 
