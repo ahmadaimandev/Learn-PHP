@@ -128,6 +128,10 @@ input[type="submit"]:hover {
 
     $usernameErr = $emailErr = $websiteErr = $passwordErr = "";
     $username = $email = $website = $password = "";
+
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+        
+    }
     ?>
     <div class="login-container">
         <h1 class="login-title">Login</h1>
