@@ -189,18 +189,6 @@
                 $websiteErr = "Invalid URL";
             }
         }
-
-        if (empty($_POST["comment"])) {
-            $comment = "";
-        } else {
-            $comment = test_input($_POST["comment"]);
-        }
-
-        if (empty($_POST["gender"])) {
-            $genderErr = "Gender is required";
-        } else {
-            $gender = test_input($_POST["gender"]);
-        }
     }
     ?>
 
