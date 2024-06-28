@@ -164,19 +164,19 @@ input[type="submit"]:hover {
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <div class="user-input">
                 <div class="name-label">
-                    <label for="User_Name">Name: <input type="text" name="username" placeholder="Enter your username" required></label>
+                    <label for="User_Name">Name: <input type="text" name="username" placeholder="Enter your username"></label>
                     <span class="error"></span>
                 </div>
                 <div class="email-label">
-                    <label for="User_Email">Email: <input type="email" name="email" placeholder="Enter your email" required></label>
+                    <label for="User_Email">Email: <input type="email" name="email" placeholder="Enter your email"></label>
                     <span class="error"></span>
                 </div>
                 <div class="password-label">
-                    <label for="User_Password">Password: <input type="password" name="password" placeholder="Enter your password:" required></label>
+                    <label for="User_Password">Password: <input type="password" name="password" placeholder="Enter your password:"></label>
                     <span class="error"></span>
                 </div>
                 <div class="website-label">
-                    <label for="User_Website">Website: <input type="text" name="website" placeholder="Paste your website link here:" required></label>
+                    <label for="User_Website">Website: <input type="text" name="website" placeholder="Paste your website link here:"></label>
                     <span class="error"></span>
                 </div>
             </div>
