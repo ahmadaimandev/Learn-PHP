@@ -205,11 +205,11 @@
                     <span class="error"></span>
                 </div>
                 <div class="password-label">
-                    <label for="User-Password">Password: <input type="password" name="password" placeholder="Enter your password:"></label>
+                    <label for="User-Password">Password: <input type="password" name="password" placeholder="Enter your password"></label>
                     <span class="error"></span>
                 </div>
                 <div class="website-label">
-                    <label for="User-Website">Website: <input type="text" name="website" placeholder="Paste your website link here:"></label>
+                    <label for="User-Website">Website: <input type="text" name="website" placeholder="Paste your website link here"></label>
                     <span class="error"></span>
                 </div>
             </div>
