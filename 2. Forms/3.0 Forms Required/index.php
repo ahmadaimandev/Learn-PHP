@@ -56,5 +56,12 @@
         }
     }
     ?>
+
+    <h2>Form Validation</h2>
+    <div class="form-background">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF  "])?>">
+            
+        </form>
+    </div>
 </body>
 </html>
