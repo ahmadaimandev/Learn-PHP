@@ -43,10 +43,16 @@
             $website = test_input($_POST["website"]);
         }
 
-        if(empty($_POST["email"])) {
-            $emailErr = "Email is required";
+        if(empty($_POST["comment"])) {
+            $comment = "";
         } else {
-            $email = test_input($_POST["email"]);
+            $comment = test_input($_POST["comment"]);
+        }
+
+        if(empty($_POST["gender"])) {
+            $genderErr = "Please choose your gender";
+        } else {
+            $gender = test_input($_POST["gender"]);
         }
     }
     ?>
