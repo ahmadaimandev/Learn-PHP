@@ -232,7 +232,7 @@
     </div>
 
     <div class="output-card">
-        <h1 class="output-title">
+        <h1 class="output-title"></h1>
             <?php
             echo "<h2>Your Input:</h2>";
             echo $username;
@@ -244,7 +244,6 @@
             echo $password;
             echo "<br>";
             ?>
-        </h1>
     </div>
 </body>
 
