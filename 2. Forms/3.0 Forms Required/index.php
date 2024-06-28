@@ -11,20 +11,43 @@
 </head>
 <body>
     <?php
-    #define variables and set to empty values
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
 
-    //This will hold error message for the required fields
+    #define variables and set to empty values
+    #This will hold error message for the required fields
     $nameErr = $emailErr = $genderErr = $websiteErr = "";
     $name = $email = $gender = $comment = $website = "";
 
     if($_SERVER["REQUEST_METHOD"] == "POST") {
+        
         if(empty($_POST["name"])) {
-            $nameErr = "Username required";
+            $nameErr = "Username is required";
         } else {
             $name = test_input($_POST["name"]);
         }
 
-        
+        if(empty($_POST["email"])) {
+            $emailErr = "Email is required";
+        } else {
+            $email = test_input($_POST["email"]);
+        }
+
+        if(empty($_POST["website"])) {
+            $websiteErr = "";
+        } else {
+            $website = test_input($_POST["website"]);
+        }
+
+        if(empty($_POST["email"])) {
+            $emailErr = "Email is required";
+        } else {
+            $email = test_input($_POST["email"]);
+        }
     }
     ?>
 </body>
