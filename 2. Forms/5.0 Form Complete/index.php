@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lato", sans-serif;
     background-color: #f0f2f5;
     margin: 0;
     padding: 0;
@@ -95,16 +98,34 @@ input[type="text"], input[type="email"], textarea {
         return $data;
     }
 
-    
+
     ?>
     <div class="form-title">
         <h2>Form Complete Validation</h2>
         <div class="form-background">
             <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div class="user-input">
-                    <label for="name">Name: <input type="text" name="name" placeholder="Enter your name:"></label>
-                    <label for="email">Email: <input type="email" name="email" placeholder="Enter your email:"></label>
-                    <label for="website">Website: <input type="text" name="website" placeholder="paste website link here:"></label>
+                    <label for="name">Name: 
+                        <span class="error">*<?php echo $nameErr;?></span>
+                        <input 
+                        type="text" 
+                        name="name" 
+                        placeholder="Enter your name:">
+                        </label>
+                    <label for="email">Email: 
+                        <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Enter your email:">
+                        <span class="error"><?php echo $emailErr;?></span>
+                    </label>
+                    <label for="website">Website: 
+                        <input 
+                        type="text" 
+                        name="website" 
+                        placeholder="paste website link here:">
+                        <span class="error"><?php echo $websiteErr?></span>
+                    </label>
                 </div>
                 <div class="user-comment">
                     <label for="comment">Feedback</label>
@@ -112,12 +133,34 @@ input[type="text"], input[type="email"], textarea {
                 </div>
                 <div class="user-gender">
                     <legend>Choose your gender:</legend>
-                    <input type="radio" name="gender" value="male" id="male-gender">
+                    <input 
+                    type="radio" 
+                    name="gender" 
+                    value="male" 
+                    id="male-gender">
                     <label for="male-gender">Male</label>
-                    <input type="radio" name="gender" value="female" id="female-gender"> 
+
+                    <input 
+                    type="radio" 
+                    name="gender" 
+                    value="female" 
+                    id="female-gender"> 
                     <label for="female-gender">Female</label>
-                    <input type="radio" name="gender" value="other" id="other-gender">
+
+                    <input 
+                    type="radio" 
+                    name="gender" 
+                    value="amazon" 
+                    id="other-gender">
+                    <label for="other-gender">Amazon</label>
+
+                    <input 
+                    type="radio" 
+                    name="gender" 
+                    value="other" 
+                    id="other-gender">
                     <label for="other-gender">Other</label>
+                    <span class="error"><?php echo $websiteErr?></span>
                 </div>
                 <div class="submit-button">
                     <input type="submit" value="Submit Feedback">
