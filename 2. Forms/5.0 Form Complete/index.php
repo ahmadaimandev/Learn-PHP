@@ -140,7 +140,7 @@ input[type="text"], input[type="email"], textarea {
             $comment = test_input($_POST["comment"]);
         }
 
-        if(empty($_POST["genders"])) {
+        if(empty($_POST["gender"])) {
             $genderErr = "Gender is required";
         }else {
             $gender = test_input($_POST["gender"]);
@@ -195,33 +195,33 @@ input[type="text"], input[type="email"], textarea {
                     <input 
                     type="radio" 
                     name="gender" 
+                    <?php if (isset($gender) && $gender=="male") echo "checked";?>
                     value="male" 
                     id="male-gender">
-                    <?php if (isset($gender) && $gender == "male") echo "checked";?>
                     <label for="male-gender">Male</label>
 
                     <input 
                     type="radio" 
-                    name="gender" 
+                    name="gender"
+                    <?php if (isset($gender) && $gender=="female") echo "checked";?> 
                     value="female" 
                     id="female-gender"> 
-                    <?php if (isset($gender) && $gender == "female") echo "checked";?>
                     <label for="female-gender">Female</label>
 
                     <input 
                     type="radio" 
-                    name="gender" 
+                    name="gender"
+                    <?php if (isset($gender) && $gender=="amazon") echo "checked";?> 
                     value="amazon" 
-                    id="other-gender">
-                    <?php if (isset($gender) && $gender == "amazon") echo "checked";?>
-                    <label for="other-gender">Amazon</label>
+                    id="amazon-gender">
+                    <label for="amazon-gender">Amazon</label>
 
                     <input 
                     type="radio" 
                     name="gender" 
+                    <?php if (isset($gender) && $gender=="other") echo "checked";?>
                     value="other" 
                     id="other-gender">
-                    <?php if (isset($gender) && $gender == "other") echo "checked";?>
                     <label for="other-gender">Other</label>
                 </div>
 
