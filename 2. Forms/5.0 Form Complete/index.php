@@ -129,7 +129,13 @@ input[type="text"], input[type="email"], textarea {
                 </div>
                 <div class="user-comment">
                     <label for="comment">Feedback</label>
-                    <textarea name="comment" id="user_comment" placeholder="Please leave a feedback" rows="5" cols="40"></textarea>
+                    <textarea 
+                    name="comment" 
+                    id="user_comment" 
+                    placeholder="Please leave a feedback" 
+                    rows="5" 
+                    cols="40">
+                    </textarea>
                 </div>
                 <div class="user-gender">
                     <legend>Choose your gender:</legend>
