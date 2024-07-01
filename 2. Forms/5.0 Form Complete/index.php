@@ -19,6 +19,14 @@
                     <label for="comment">Feedback</label>
                     <textarea name="comment" id="user_comment" placeholder="Please leave a feedback" rows="5" cols="40"></textarea>
                 </div>
+                <div class="user-gender">
+                    <input type="radio" name="gender" value="male" id="male-gender">
+                    <label for="male-gender">Male</label>
+                    <input type="radio" name="gender" value="female" id="female-gender"> 
+                    <label for="female-gender">Female</label>
+                    <input type="radio" name="gender" value="other" id="other-gender">
+                    <label for="other-gender">Other</label>
+                </div>
                 <div class="submit-button">
                     <input type="submit" value="Submit Feedback">
                 </div>
