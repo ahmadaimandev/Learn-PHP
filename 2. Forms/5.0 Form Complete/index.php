@@ -5,7 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Form Validation</title>
 </head>
+<style>
+
+</style>
 <body>
+    <?php
+    //declaring error and empty variables
+    $nameErr = $emailErr = $genderErr = $websiteErr = "";
+    $name = $email = $gender = $comment = $website = "";
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    ?>
     <div class="form-title">
         <h2>Form Complete Validation</h2>
         <div class="form-background">
