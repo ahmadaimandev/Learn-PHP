@@ -6,6 +6,80 @@
     <title>Complete Form Validation</title>
 </head>
 <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-title {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.form-title h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-background {
+    margin-top: 20px;
+}
+
+.user-input, .user-comment, .user-gender, .submit-button {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.user-gender input[type="radio"] {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.user-gender label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.submit-button input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button input[type="submit"]:hover {
+    background-color: #0056b3;
+}
 
 </style>
 <body>
@@ -80,8 +154,8 @@
                     <textarea name="comment" id="user_comment" placeholder="Please leave a feedback" rows="5" cols="40"></textarea>
                 </div>
                 <div class="user-gender">
+                    <legend>Choose your gender:</legend>
                     <input type="radio" name="gender" value="male" id="male-gender">
-                    
                     <label for="male-gender">Male</label>
                     <input type="radio" name="gender" value="female" id="female-gender"> 
                     <label for="female-gender">Female</label>
