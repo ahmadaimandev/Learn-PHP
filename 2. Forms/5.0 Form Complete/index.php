@@ -97,7 +97,13 @@ input[type="text"], input[type="email"], textarea {
         $data = htmlspecialchars($data);
         return $data;
     }
-    
+
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        if(empty($_POST["name"])) {
+            $nameErr
+        }
+    }
     ?>
     <div class="form-title">
         <h2>Form Complete Validation</h2>
