@@ -80,6 +80,10 @@ input[type="text"], input[type="email"], textarea {
     font-size: 16px;
 }
 
+.error {
+    color: red;
+}
+
 .submit-button input[type="submit"]:hover {
     background-color: #0056b3;
 }
@@ -108,6 +112,8 @@ input[type="text"], input[type="email"], textarea {
                 $nameErr = "Only letters and white space allowed";
             }
         }
+
+
     }
     ?>
     <div class="form-title">
@@ -121,7 +127,8 @@ input[type="text"], input[type="email"], textarea {
                         <input 
                         type="text" 
                         name="name" 
-                        placeholder="Enter your name:">
+                        placeholder="Enter your name:"
+                        value="<?php echo $name;?>">
                         </label>
                     <label for="email">Email: 
                         <input 
