@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="form-title">
+        <h2>Form Complete Validation</h2>
+        <div class="form-background">
+            <form method="post" action="">
+                <div class="user-input">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
