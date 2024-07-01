@@ -19,6 +19,9 @@
                     <label for="comment">Feedback</label>
                     <textarea name="comment" id="user_comment" placeholder="Please leave a feedback" rows="5" cols="40"></textarea>
                 </div>
+                <div class="submit-button">
+                    <input type="submit" value="Submit Feedback">
+                </div>
             </form>
         </div>
     </div>
