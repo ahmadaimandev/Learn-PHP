@@ -69,7 +69,7 @@
     <div class="form-title">
         <h2>Form Complete Validation</h2>
         <div class="form-background">
-            <form method="post" action="">
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div class="user-input">
                     <label for="name">Name: <input type="text" name="name" placeholder="Enter your name:"></label>
                     <label for="email">Email: <input type="email" name="email" placeholder="Enter your email:"></label>
