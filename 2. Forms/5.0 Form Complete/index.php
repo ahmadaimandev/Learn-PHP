@@ -97,12 +97,12 @@ input[type="text"], input[type="email"], textarea {
         $data = htmlspecialchars($data);
         return $data;
     }
-
-
+    
     ?>
     <div class="form-title">
         <h2>Form Complete Validation</h2>
         <div class="form-background">
+
             <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div class="user-input">
                     <label for="name">Name: 
@@ -127,6 +127,7 @@ input[type="text"], input[type="email"], textarea {
                         <span class="error"><?php echo $websiteErr?></span>
                     </label>
                 </div>
+                
                 <div class="user-comment">
                     <label for="comment">Feedback</label>
                     <textarea 
@@ -137,6 +138,7 @@ input[type="text"], input[type="email"], textarea {
                     cols="40">
                     </textarea>
                 </div>
+
                 <div class="user-gender">
                     <legend>Choose your gender:</legend>
                     <input 
@@ -168,6 +170,7 @@ input[type="text"], input[type="email"], textarea {
                     <label for="other-gender">Other</label>
                     <span class="error"><?php echo $websiteErr?></span>
                 </div>
+
                 <div class="submit-button">
                     <input type="submit" value="Submit Feedback">
                 </div>
