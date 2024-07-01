@@ -82,6 +82,8 @@ input[type="text"], input[type="email"], textarea {
 
 .error {
     color: red;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .submit-button input[type="submit"]:hover {
@@ -113,6 +115,36 @@ input[type="text"], input[type="email"], textarea {
             }
         }
 
+        if(empty($_POST["email"])) {
+            $emailErr = "Email is required";
+        }else {
+            $email = test_input($_POST["email"]);
+            //check email address is well formed
+            if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $emailErr = "Invalid email format";
+            }
+        }
+
+        if(empty($_POST["website"])) {
+            $websiteErr = "";
+        }else {
+            //check the website address
+            if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+                $websiteErr = "Invalid URL";
+            }
+        }
+
+        if(empty($_POST["comment"])) {
+            $commentErr = "";
+        }else {
+            $comment = test_input($_POST["comment"]);
+        }
+
+        if(empty($_POST["genders"])) {
+            $genderErr = "Gender is required";
+        }else {
+            $gender = test_input($_POST["gender"]);
+        }
 
     }
     ?>
@@ -131,18 +163,18 @@ input[type="text"], input[type="email"], textarea {
                         value="<?php echo $name;?>">
                         </label>
                     <label for="email">Email: 
+                        <span class="error">*<?php echo $emailErr;?></span>
                         <input 
                         type="email" 
                         name="email" 
                         placeholder="Enter your email:">
-                        <span class="error"><?php echo $emailErr;?></span>
                     </label>
                     <label for="website">Website: 
+                        <span class="error"><?php echo $websiteErr;?></span>
                         <input 
                         type="text" 
                         name="website" 
                         placeholder="paste website link here:">
-                        <span class="error"><?php echo $websiteErr?></span>
                     </label>
                 </div>
                 
@@ -158,12 +190,14 @@ input[type="text"], input[type="email"], textarea {
                 </div>
 
                 <div class="user-gender">
+                <span class="error">*<?php echo $genderErr;?></span>
                     <legend>Choose your gender:</legend>
                     <input 
                     type="radio" 
                     name="gender" 
                     value="male" 
                     id="male-gender">
+                    <?php if (isset($gender) && $gender == "male") echo "checked";?>
                     <label for="male-gender">Male</label>
 
                     <input 
@@ -171,6 +205,7 @@ input[type="text"], input[type="email"], textarea {
                     name="gender" 
                     value="female" 
                     id="female-gender"> 
+                    <?php if (isset($gender) && $gender == "female") echo "checked";?>
                     <label for="female-gender">Female</label>
 
                     <input 
@@ -178,6 +213,7 @@ input[type="text"], input[type="email"], textarea {
                     name="gender" 
                     value="amazon" 
                     id="other-gender">
+                    <?php if (isset($gender) && $gender == "amazon") echo "checked";?>
                     <label for="other-gender">Amazon</label>
 
                     <input 
@@ -185,8 +221,8 @@ input[type="text"], input[type="email"], textarea {
                     name="gender" 
                     value="other" 
                     id="other-gender">
+                    <?php if (isset($gender) && $gender == "other") echo "checked";?>
                     <label for="other-gender">Other</label>
-                    <span class="error"><?php echo $websiteErr?></span>
                 </div>
 
                 <div class="submit-button">
