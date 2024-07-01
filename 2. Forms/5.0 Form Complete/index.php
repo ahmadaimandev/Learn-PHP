@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Complete Form Validation</title>
 </head>
 <body>
     <div class="form-title">
@@ -17,7 +17,7 @@
                 </div>
                 <div class="user-comment">
                     <label for="comment">Feedback</label>
-                    <textarea name="" id=""></textarea>
+                    <textarea name="comment" id="user_comment" placeholder="Please leave a feedback" rows="5" cols="40"></textarea>
                 </div>
             </form>
         </div>
