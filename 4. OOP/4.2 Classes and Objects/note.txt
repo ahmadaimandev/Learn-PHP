@@ -12,3 +12,6 @@ Define Objects
 
 $this keyword
 -> A keyword refer to the current object, and is only available inside methods.
+
+instanceof
+-> This keyword to check if an object belongs to a specific class.
