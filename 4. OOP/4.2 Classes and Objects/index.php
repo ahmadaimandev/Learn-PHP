@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Class and Objects</title>
 </head>
-<body>
+<?>
     <?php
     class fruits {
         //code goes here
@@ -53,7 +53,7 @@
     echo '<br>';
 
     echo 'Fruits name: ' .$mango->get_name(). '<br>';
-    echo 'Color: ' .$mango->get_color();
+    echo 'Color: ' .$mango->get_color(). '<br>';
     echo '<br>';
     ?>
 
@@ -62,6 +62,7 @@
     <?php
     #1. Inside the class
     #create new class
+    echo "<h2>Change the value property inside class</h2>";
     class CarModel {
         //set properties
         public $CarName;
@@ -73,7 +74,11 @@
     }
     $Ford = new CarModel();
     $Ford->set_CarName("Mustang");
-    echo "Ford Model: " .$Ford->CarName;
+    echo "Ford Model: " .$Ford->CarName ."<br>";
+    ?>
+
+    <?php
+    
     ?>
 </body>
 </html>
