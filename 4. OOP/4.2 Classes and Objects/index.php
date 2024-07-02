@@ -18,8 +18,16 @@
             $this->name = $name;           
         }
 
+        function set_color($color) {
+            $this->color = $color;
+        }
+
         function get_name() {
             return $this->name;
+        }
+
+        function get_color() {
+            return $this->color;
         }
     }
 
@@ -27,9 +35,15 @@
     $banana = new fruits();
     $mango= new fruits();
 
-    $apple-> set_name("Apple");
+    $apple->set_name("Apple");
+    $apple->set_color("Red");
+
     $banana-> set_name("Banana");
+    $banana->set_color("Yellow");
+
     $mango-> set_name("Mango");
+    $mango->set_color("Orangered");
+
 
     echo $apple->get_name();
     echo "<br>";
