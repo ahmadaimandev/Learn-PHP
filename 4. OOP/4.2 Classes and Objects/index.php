@@ -57,12 +57,23 @@
     echo '<br>';
     ?>
 
+    <!--Two ways to change the value-->
+
     <?php
+    #1. Inside the class
     #create new class
-    class Car {
+    class CarModel {
+        //set properties
         public $CarName;
+
+        //set method
+        function set_CarName($CarName) {
+            $this->CarName = $CarName;
+        }
     }
-    $
+    $Ford = new CarModel();
+    $Ford->set_CarName("Mustang");
+    echo "Ford Model: " .$Ford->CarName;
     ?>
 </body>
 </html>
