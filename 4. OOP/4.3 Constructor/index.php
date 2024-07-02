@@ -14,9 +14,37 @@
         public $color;
 
         //set method
-        function __construct($name) 
-        {
-            $this->$name;
+        function __construct($name) {
+            $this->name = $name;
+        }
+
+        function get_name() {
+            return $this->name;
+        }
+    }
+    $apple = new fruit("Apple");
+    echo "Fruits Name: " .$apple->get_name();
+    ?>
+
+    <?php
+    echo "<h2>Second Example</h2>";
+    class fruits {
+        //set properties
+        public $fruitsName;
+        public $fruitsColor;
+
+        //set methods
+        function __construct($fruitsName, $fruitsColor) {
+            $this->fruitsName = $fruitsName;
+            $this->fruitsColor = $fruitsColor;
+        }
+
+        function get_fruitsName() {
+            return $this->fruitsName;
+        }
+
+        function get_fruitsColor() {
+            return $this->fruitsColor;
         }
     }
     ?>
