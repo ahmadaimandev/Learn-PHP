@@ -1,0 +1,5 @@
+the__construct function
+-> Allows you to initialize an object properties upon creation of the object.
+-> if create a __construct function, php will automatically call this function when you are create
+an object from a class.
+-> construct function starts with 2 underscores (__construct)
