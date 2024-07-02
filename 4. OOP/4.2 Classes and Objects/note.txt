@@ -8,3 +8,4 @@ but each objects will have different values for the properties.
 Define Objects
 -> Classes are nothing without objects! we can create multiple objects from a class.
 -> Each objects has all the properties and methods defined in the class, but they will have different properties value.
+-> Objects and class are created using new keyword

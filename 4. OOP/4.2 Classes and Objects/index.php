@@ -24,6 +24,8 @@
     }
 
     $apple = new fruits();
+    $banana = new fruits();
+    $mango= new fruits();
     ?>
 </body>
 </html>
