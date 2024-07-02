@@ -44,12 +44,17 @@
     $mango-> set_name("Mango");
     $mango->set_color("Orangered");
 
+    echo 'Fruits name: ' .$apple->get_name(). '<br>';
+    echo 'Color: ' .$apple->get_color();
+    echo '<br>';
 
-    echo $apple->get_name();
-    echo "<br>";
-    echo $banana->get_name();
-    echo "<br>";
-    echo $mango->get_name();
+    echo 'Fruits name: ' .$banana->get_name(). '<br>';
+    echo 'Color: ' .$banana->get_color();
+    echo '<br>';
+
+    echo 'Fruits name: ' .$mango->get_name(). '<br>';
+    echo 'Color: ' .$mango->get_color();
+    echo '<br>';
     ?>
 </body>
 </html>
