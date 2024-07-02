@@ -47,6 +47,11 @@
             return $this->fruitsColor;
         }
     }
+    $apple = new fruits("Apple", "red");
+echo $apple->get_fruitsName();
+echo "<br>";
+echo $apple->get_fruitsColor();
+
     ?>
 </body>
 </html>
