@@ -56,5 +56,13 @@
     echo 'Color: ' .$mango->get_color();
     echo '<br>';
     ?>
+
+    <?php
+    #create new class
+    class Car {
+        public $CarName;
+    }
+    $
+    ?>
 </body>
 </html>
