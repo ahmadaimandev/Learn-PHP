@@ -101,23 +101,25 @@
 
     <?php
     echo "<h2>instanceof</h2>";
-    class Animal
+    class Fruit
     {
-        //set properties
-        public $AnimalName;
-        public $AnimalFamily;
+        // Properties
+        public $name;
+        public $color;
 
-        //set method
-        function set_AnimalName($AnimalName)
+        // Methods
+        function set_name($name)
         {
-            $this->AnimalName = $AnimalName;
+            $this->name = $name;
         }
-
-        function set_AnimalFamily($AnimalFamily)
+        function get_name()
         {
-            $this->AnimalFamily = $AnimalFamily;
+            return $this->name;
         }
     }
+
+    $apple = new Fruit();
+    var_dump($apple instanceof Fruit);
     ?>
 </body>
 
