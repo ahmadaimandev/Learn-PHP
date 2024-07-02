@@ -1,0 +1,10 @@
+Classes And Objects
+OOP Case
+-> Assume we have class named fruit. 
+-> Fruit properties can have like name, color, weight etc. We can define the variable that will hold the values for these properties    
+-> When the individual objects (apple, banana, mango) are created, they inherit all the properties and behaviors from the class, 
+but each objects will have different values for the properties.
+
+Define Objects
+-> Classes are nothing without objects! we can create multiple objects from a class.
+-> Each objects has all the properties and methods defined in the class, but they will have different properties value.

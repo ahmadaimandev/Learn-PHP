@@ -1,0 +1,22 @@
+OOP
+-> stands for object-oriented programming
+
+Procedural and OOP
+-> Procedural is about writing procedures and functions that perform operations on the data.
+-> OOP is about creating objects that contain both data and functions.
+
+OOP advantages
+1. Faster and easier to execute.
+2. Provide clear structure for the programs.
+3. Help the codes DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug.
+4. Make it possible to create full reusable applications with less code and shorter development time.
+
+Classes and objects
+-> This two things are two main aspects of OOP.
+
+example:
+Class Name: Fruits
+Objects: Banana, Mango, Apple
+
+-> Class is template for objects, and an object is an instance class.
+-> When objects are created, they will inherit all the properties and behaviors from the class. but each object wil have different values of the properties.
