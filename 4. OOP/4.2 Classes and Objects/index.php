@@ -89,33 +89,34 @@
     <?php
     echo "<h2>Change the property value outside the class</h2>";
 
-    class Airplane {
+    class Airplane
+    {
         public $AirplaneModel;
     }
     $Boeing777 = new Airplane();
     $Boeing777->AirplaneModel = "MH456";
 
-    echo "Airplane Model: " .$Boeing777->AirplaneModel ."<br>";
+    echo "Airplane Model: " . $Boeing777->AirplaneModel . "<br>";
     ?>
-    
-    <?php
-    echo "<h2>instanceof</h2>"
 
-    class Animal {
+    <?php
+    echo "<h2>instanceof</h2>";
+    class Animal
+    {
         //set properties
         public $AnimalName;
         public $AnimalFamily;
 
         //set method
-        function set_AnimalName( $AnimalName) {
+        function set_AnimalName($AnimalName)
+        {
             $this->AnimalName = $AnimalName;
         }
 
-        function set_AnimalFamily( $AnimalFamily) {
+        function set_AnimalFamily($AnimalFamily)
+        {
             $this->AnimalFamily = $AnimalFamily;
         }
-
-        
     }
     ?>
 </body>
