@@ -17,10 +17,10 @@
         }
 
         function __destruct() {
-            echo "Fruits name is {$this->name} and the color is {$this->color}";
+            echo "Fruits name {$this->name} and the color is {$this->color}";
         }
     }
-    $apple = new fruits("Apple", "Red")
+    $apple = new fruits("Apple", "Red");
     ?>
 </body>
 </html>
