@@ -1,0 +1,6 @@
+Access Modifiers
+
+-> Three access Modifiers
+1. public - accessed everywhere. this is default
+2. protected - access within the class and by class derived from that class
+3. private - the property and method can ONLY    be access within the class 
