@@ -25,3 +25,4 @@ Get A Time
 * a - lowercase Ante Meridiem and Post Meridiem AM or PM
 
 NOTE: PHP date() function will return the current date/time from the server.
+

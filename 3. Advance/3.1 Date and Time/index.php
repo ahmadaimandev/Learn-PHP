@@ -22,6 +22,9 @@
 
     <h2>Get A Time</h2> 
     <?php echo "Time is: " .date("H:i:sa");?>
+
+    <h2>Get Your Timezone</h2>
+    
 </body>
 
 </html>
