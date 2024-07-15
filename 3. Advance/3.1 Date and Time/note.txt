@@ -23,3 +23,5 @@ Get A Time
 * i - Minute with leading zeros 00-59
 * s - Seconds with leading zeros 00-59
 * a - lowercase Ante Meridiem and Post Meridiem AM or PM
+
+NOTE: PHP date() function will return the current date/time from the server.
