@@ -16,6 +16,9 @@
     echo "Today is " . date("Y-m-d") . "<br>";
     echo "Today is " . date("l");
     ?>
+
+    <h2>Automatic Copyright year</h2>
+    <p>&copy;Since 2010 - <?php echo date("Y");?></p>
 </body>
 
 </html>
