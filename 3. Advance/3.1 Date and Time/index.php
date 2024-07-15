@@ -28,6 +28,11 @@
     date_default_timezone_set("Asia/Kuala_Lumpur");
     echo "The time is: " .date("H:i:sa");
     ?>
+
+    <h2>mktime() functions</h2>
+    <?php
+    
+    ?>
 </body>
 
 </html>
