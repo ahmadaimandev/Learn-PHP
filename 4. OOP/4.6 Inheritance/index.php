@@ -33,5 +33,20 @@ $strawberry->intro() ;
 </head>
 <body>
     <h2>PHP - Inheritance and the Protected Access Modifier</h2>
+    <?php
+    class Car {
+        public $CarName;
+        public $CarColor;
+        public function __construct($CarName, $CarColor) {
+            $this->CarName = $CarName;
+            $this->CarColor = $CarColor;
+        }
+        protected function intro() {
+            echo "This car name is {$this->CarName} and the color is{$this->CarColor}";
+        }
+
+            
+    }
+    ?>
 </body>
 </html>
