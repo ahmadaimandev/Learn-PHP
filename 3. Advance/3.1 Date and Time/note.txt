@@ -30,4 +30,8 @@ Get Your Timezone
 -> If the time you got from the code is not correct, it's probably because your server is in another country
 
 Create date with mktime()
+-> PHP mktime() function returns the unix timestamp for a date. The unix timestamp contains the number of seconds between the Unix Epoch 
+(January 1 1970 00:00:00 GMT) and the time specified
 
+syntax:
+mktime(hour, minute, second, month, day, year)
