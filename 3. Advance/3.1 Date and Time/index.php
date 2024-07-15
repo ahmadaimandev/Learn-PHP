@@ -19,6 +19,8 @@
 
     <h2>Automatic Copyright year</h2>
     <p>&copy;Since 2010 - <?php echo date("Y");?></p>
+
+    <h2>Get A Time</h2>
 </body>
 
 </html>

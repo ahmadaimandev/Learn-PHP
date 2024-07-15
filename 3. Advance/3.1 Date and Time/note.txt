@@ -15,3 +15,8 @@ Get A Date
 * m - Represents a month 01-12
 * y - Represents a year four digits
 * l - Lowercase L Represents day of the week
+
+Get A Time
+-> Some commonly characters that are commonly used for times:
+* H - 24 hour format of an hour 00-23
+* h - 12 hour format of an hour with leading zeros 01-12
