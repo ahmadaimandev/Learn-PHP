@@ -39,7 +39,8 @@
     <h2>Create date from string</h2>
     <?php
     //strtotime(time, now)
-    
+    $stringtotime = strtotime("10:30PM 15 July 2024");
+    echo "Created dated is: " .date("d-m-Y H:i:sa", $stringtotime)
     ?>
 </body>
 
