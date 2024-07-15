@@ -20,3 +20,6 @@ Get A Time
 -> Some commonly characters that are commonly used for times:
 * H - 24 hour format of an hour 00-23
 * h - 12 hour format of an hour with leading zeros 01-12
+* i - Minute with leading zeros 00-59
+* s - Seconds with leading zeros 00-59
+* a - lowercase Ante Meridiem and Post Meridiem AM or PM
