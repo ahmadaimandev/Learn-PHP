@@ -35,6 +35,12 @@
     $d = mktime (15, 56, 23, 03, 02, 2004);
     echo "Time created is: " .date("h:i:sa Y-m-d ", $d);
     ?>
+
+    <h2>Create date from string</h2>
+    <?php
+    //strtotime(time, now)
+    
+    ?>
 </body>
 
 </html>
