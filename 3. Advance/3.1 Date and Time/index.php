@@ -45,6 +45,7 @@
 
     <h2>Date from string example:</h2>
     <?php
+    echo "This will show tomorrow <br>"; 
     $d=strtotime("tomorrow");
     echo date("Y-m-d h:i:sa", $d) . "<br>";
     
