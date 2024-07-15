@@ -24,7 +24,10 @@
     <?php echo "Time is: " .date("H:i:sa");?>
 
     <h2>Get Your Timezone</h2>
-    
+    <?php
+    date_default_timezone_set("Asia/Kuala_Lumpur");
+    echo "The time is: " .date("H:i:sa");
+    ?>
 </body>
 
 </html>
