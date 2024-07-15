@@ -20,7 +20,8 @@
     <h2>Automatic Copyright year</h2>
     <p>&copy;Since 2010 - <?php echo date("Y");?></p>
 
-    <h2>Get A Time</h2>
+    <h2>Get A Time</h2> 
+    <?php echo "Time is: " .date("H:i:sa");?>
 </body>
 
 </html>
