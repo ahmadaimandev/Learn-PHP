@@ -10,8 +10,10 @@ class Fruits {
         echo "The fruit is {$this->name} and the color is: {$this->color}";
     }
 }
-//strawberry is inherited from fruits
-class strawberry extends Fruits {
+
+class strawberry extends Fruits { //strawberry is inherited from fruits
+    //this mean strawberry class can use the public $name and $color properties as well as the public__construct() and intro() methods from
+    //fruit class
     public function message() {
         echo "Am i a fruit or a berry?";
     }
