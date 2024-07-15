@@ -39,9 +39,20 @@
     <h2>Create date from string</h2>
     <?php
     //strtotime(time, now)
-    $stringtotime = strtotime("10:30PM 15 July 2024");
-    echo "Created dated is: " .date("d-m-Y H:i:sa", $stringtotime) ."<br>";
+    $d=strtotime("10:30pm April 15 2014"); 
+    echo "Created date is " . date("Y-m-d h:i:sa", $d);
+    ?>
+
+    <h2>Date from string example:</h2>
+    <?php
+    $d=strtotime("tomorrow");
+    echo date("Y-m-d h:i:sa", $d) . "<br>";
     
+    $d=strtotime("next Saturday");
+    echo date("Y-m-d h:i:sa", $d) . "<br>";
+    
+    $d=strtotime("+3 Months");
+    echo date("Y-m-d h:i:sa", $d) . "<br>";
     ?>
 </body>
 
