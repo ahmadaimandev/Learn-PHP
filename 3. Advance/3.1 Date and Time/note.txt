@@ -35,3 +35,9 @@ Create date with mktime()
 
 syntax:
 mktime(hour, minute, second, month, day, year)
+
+Create a date from a string with strtotime()
+-> strtotime() functions used to convert a human readable date strings Unix timestamp (the number of seconds since January 1 1970 00:00:00 GMT)
+
+syntax: 
+
