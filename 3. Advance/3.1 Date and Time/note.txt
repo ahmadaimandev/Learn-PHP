@@ -8,3 +8,10 @@ parameter:
 format: Required. Specifies the format of the timestamp
 timestamp: Optional. specifies a timestamp. Default is the current date and time.
 
+
+Get A Date  
+-> Some characters that are commonly used for dates:    
+* d - Represents the day of the month 01-31
+* m - Represents a month 01-12
+* y - Represents a year four digits
+* l - Lowercase L Represents day of the week
