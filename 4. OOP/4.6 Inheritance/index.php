@@ -23,3 +23,15 @@ $strawberry = new strawberry("Strawberry", "Red");
 $strawberry->message();
 $strawberry->intro() ;
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>PHP - Inheritance and the Protected Access Modifier</h2>
+</body>
+</html>
