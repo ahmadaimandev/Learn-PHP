@@ -31,7 +31,9 @@
 
     <h2>mktime() functions</h2>
     <?php
-    
+    //mktime(hour, minute, second, month, day, year)
+    $d = mktime (15, 56, 23, 03, 02, 2004);
+    echo "Time created is: " .date("h:i:sa Y-m-d ", $d);
     ?>
 </body>
 
