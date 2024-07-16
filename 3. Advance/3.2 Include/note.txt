@@ -9,3 +9,8 @@ that are uses the include statement.
 The include and require statement are identical, except upon failure.
 * require = will produce fatal error (E_COMPILE_ERROR) and stop the script.
 * include = will only produce warning (E_WARNING) and the script will continue.
+
+
+PHP include Vs. require
+
+-> 
