@@ -36,14 +36,14 @@
     echo "Time created is: " .date("h:i:sa Y-m-d ", $d);
     ?>
 
-    <h2>Create date from string</h2>
+    <h2>Create date from a string</h2>
     <?php
     //strtotime(time, now)
     $d=strtotime("10:30pm April 15 2014"); 
     echo "Created date is " . date("Y-m-d h:i:sa", $d);
     ?>
 
-    <h2>Date from string example:</h2>
+    <h2>More example for create date from a string</h2>
     <?php
     echo "This will show tomorrow <br>"; 
     $d=strtotime("tomorrow");
