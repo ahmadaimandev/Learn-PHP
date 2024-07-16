@@ -13,4 +13,9 @@ The include and require statement are identical, except upon failure.
 
 PHP include Vs. require
 
--> 
+-> require statement is also used to include file into PHP code.
+
+-> There's a big difference between include and require:
+1. When a file is included with the include statement and PHP cannot find it, the script will continue to execute.
+2. 
+
