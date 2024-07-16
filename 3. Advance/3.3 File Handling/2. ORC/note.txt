@@ -1,0 +1,3 @@
+PHP File Open/Read/Close
+
+-> A better method to open files with the fopen() function. It gives more function that the readfile()
