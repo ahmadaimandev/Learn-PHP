@@ -7,7 +7,12 @@
 </head>
 <body>
     <?php
-    
+    //The first parameter of fopen() contains name of the file to be opened
+    // and the second parameter specifies in which mode the file should be opened.
+
+    $myFile = fopen("webdict.txt", "r") or die("Unable To Open The File");
+    echo fread($myFile,filesize("webdict.txt"));
+    fclose($myFile);
     ?>
 </body>
 </html>
