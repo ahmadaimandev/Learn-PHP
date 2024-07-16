@@ -14,3 +14,8 @@ common error:
 1. edit the wrong file.
 2. filling hard-drive with garbage data.
 3. deleting the content of a file by accident.
+
+
+PHP readfile() function
+- Reads the file and writes it to the output buffer
+- This function is useful if all you want to do is open up a file and its content.
