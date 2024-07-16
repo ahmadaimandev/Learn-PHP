@@ -58,7 +58,13 @@
 
     <h2>More Date Examples:</h2>
     <?php
+    $startDate = strtotime("Saturday");
+    $endDate = strtotime("+6 weeks", $startDate);
     
+    while ($startDate < $endDate) {
+        echo date ("M d", $startDate) . "<br>";
+        $startDate = strtotime("+1week", $startDate);
+    }
     ?>
 </body>
 
