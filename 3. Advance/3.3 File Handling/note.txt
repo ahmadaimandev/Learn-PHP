@@ -1,0 +1,12 @@
+PHP File Handling
+
+-> File handling is an important part of any web application. You often need to open and process
+a file for a different task.
+
+PHP manipulating files function:
+1. Create (C)
+2. Read (R)
+3. Upload (U)
+4. Edit (E)
+
+Be Careful!

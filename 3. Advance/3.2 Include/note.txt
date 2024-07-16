@@ -20,3 +20,7 @@ PHP include Vs. require
 2. If we do same example using the require statement, the echo statement will not be executed because the script execution dies
 after the require statment returned fatal error.
 
+
+WHEN TO USE ?
+require - when the file is required by applications.
+include - when the file is not required and application should continue when file is not found.
