@@ -11,4 +11,6 @@ PHP manipulating files function:
 
 Be Careful when manipulate files
 common error:
-1. 
+1. edit the wrong file.
+2. filling hard-drive with garbage data.
+3. deleting the content of a file by accident.
