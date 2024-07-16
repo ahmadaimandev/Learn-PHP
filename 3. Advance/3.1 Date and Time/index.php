@@ -56,8 +56,9 @@
     echo date("Y-m-d h:i:sa", $d) . "<br>";
     ?>
 
-    <h2>More Date Examples:</h2>
+    <h2>More Date Examples: #1</h2>
     <?php
+    //The example below outputs the dates for the next six Saturdays:
     $startDate = strtotime("Saturday");
     $endDate = strtotime("+6 weeks", $startDate);
     
@@ -66,6 +67,8 @@
         $startDate = strtotime("+1week", $startDate);
     }
     ?>
+
+    <h2>More Date examples: #2</h2>
 </body>
 
 </html>
