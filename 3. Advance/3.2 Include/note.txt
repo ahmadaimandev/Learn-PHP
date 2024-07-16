@@ -2,5 +2,10 @@ PHP Include Files
 
 -> include or require statement takes all the text/markup that exist in the specified files and copies it into the file
 that are uses the include statement.
-
 -> including files are very useful when you want to include the same PHP, HTML, or text multiples pages of website
+-> It is possible to insert the content of one PHP  file (before the server executes it), with the include or require statement.
+
+
+The include and require statement are identical, except upon failure.
+* require = will produce fatal error (E_COMPILE_ERROR) and stop the script.
+* include = will only produce warning (E_WARNING) and the script will continue.
