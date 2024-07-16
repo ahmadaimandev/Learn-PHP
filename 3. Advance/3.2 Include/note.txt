@@ -17,5 +17,6 @@ PHP include Vs. require
 
 -> There's a big difference between include and require:
 1. When a file is included with the include statement and PHP cannot find it, the script will continue to execute.
-2. 
+2. If we do same example using the require statement, the echo statement will not be executed because the script execution dies
+after the require statment returned fatal error.
 
