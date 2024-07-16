@@ -1,0 +1,3 @@
+PHP Read Single Line - fgets()
+
+-> This function is used to read a single line from a file.
