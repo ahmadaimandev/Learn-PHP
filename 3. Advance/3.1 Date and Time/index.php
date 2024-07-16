@@ -55,6 +55,11 @@
     $d=strtotime("+3 Months");
     echo date("Y-m-d h:i:sa", $d) . "<br>";
     ?>
+
+    <h2>More Date Examples:</h2>
+    <?php
+    
+    ?>
 </body>
 
 </html>
