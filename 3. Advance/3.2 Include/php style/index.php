@@ -10,6 +10,9 @@
 <body>
     <h1>PHP Include Footer File</h1>
     <?php
+    include 'navbar.php'
+    ?>
+    <?php
     include  'footer.php';
     ?>
 </body>
