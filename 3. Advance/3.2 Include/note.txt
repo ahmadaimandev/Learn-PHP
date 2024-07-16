@@ -1,0 +1,6 @@
+PHP Include Files
+
+-> include or require statement takes all the text/markup that exist in the specified files and copies it into the file
+that are uses the include statement.
+
+-> including files are very useful when you want to include the same PHP, HTML, or text multiples pages of website
