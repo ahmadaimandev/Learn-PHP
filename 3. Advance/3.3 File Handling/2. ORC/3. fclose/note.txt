@@ -1,0 +1,11 @@
+PHP Close File - fclose()
+
+-> This function is used to close an open 
+
+<?php
+$myfile = fopen("webdictionary.txt", "r");
+// some code to be executed....
+fclose($myfile);
+?>
+
+-> The fclose() requires the name of the file (or a variable that holds the filename)
