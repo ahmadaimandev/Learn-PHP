@@ -69,6 +69,10 @@
     ?>
 
     <h2>More Date examples: #2</h2>
+    <?php
+    //The example below outputs the number of days until 4th of July:
+    
+    ?>
 </body>
 
 </html>
