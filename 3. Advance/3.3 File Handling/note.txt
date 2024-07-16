@@ -9,4 +9,6 @@ PHP manipulating files function:
 3. Upload (U)
 4. Edit (E)
 
-Be Careful!
+Be Careful when manipulate files
+common error:
+1. 
