@@ -1,0 +1,38 @@
+{
+"ref_role": [
+	{
+		"rr_id" : 1,
+		"rr_acronym" : "admin",
+		"rr_description" : "Administrator",
+		"rr_status_indicator" : 1,
+		"rr_dob" : "2024-07-19"
+	},
+	{
+		"rr_id" : 25,
+		"rr_acronym" : "Izlan",
+		"rr_description" : "PPTM FA29",
+		"rr_status_indicator" : 1,
+		"rr_dob" : "2024-07-05"
+	},
+	{
+		"rr_id" : 26,
+		"rr_acronym" : "Aiman",
+		"rr_description" : "PPTM FA29",
+		"rr_status_indicator" : 1,
+		"rr_dob" : "2024-07-27"
+	},
+	{
+		"rr_id" : 27,
+		"rr_acronym" : "Imran",
+		"rr_description" : "PPTM",
+		"rr_status_indicator" : 1,
+		"rr_dob" : "2024-07-04"
+	},
+	{
+		"rr_id" : 28,
+		"rr_acronym" : "Syafiq",
+		"rr_description" : "PTM FA41",
+		"rr_status_indicator" : 1,
+		"rr_dob" : "2024-07-01"
+	}
+]}
