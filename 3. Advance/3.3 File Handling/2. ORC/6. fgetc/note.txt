@@ -1,1 +1,2 @@
 PHP Read Single Character - fgetc()
+-> This function is used to read a Single character from a file.
