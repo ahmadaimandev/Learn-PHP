@@ -1,0 +1,3 @@
+PHP Check End-of-File - feof()
+-> This function checks if the "end-of-file" (EOF) has been created.
+-> This function can be useful for looping through data of unknown length.
