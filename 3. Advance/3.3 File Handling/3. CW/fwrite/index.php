@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>Writing File</h2>
-    <?php
-    $myfile = fopen("note.txt", "w") or die("Unable to open the file");
-    $txt1 = "John Doe\n";
-    fwrite($myfile, $txt1);
+<?php
+$MyFile = fopen("C:\Bitnami\wappstack-8.1.4-0\apache2\htdocs\Learn-PHP\3. Advance\3.3 File Handling\3. CW\fwrite\write.txt", "w") or die("Unable to find the file");
+$txt = "This is john doe\n";
 
-    $txt2 = "John Doe\n";
-    fwrite($myfile, $txt2);
-
-    fclose($myfile);
-    ?>
-</body>
-</html>
+fwrite($MyFile, $txt);
+fclose($MyFile);
+?>
