@@ -1,0 +1,4 @@
+PHP Write to File - fwrite()
+-> This function  is used to write to a file.
+-> The first parameter of fwrite() contains the name of the file to write too.
+-> And the second parameter is string to be written.
