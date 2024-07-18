@@ -8,7 +8,7 @@
 <body>
     <h2>Writing File</h2>
     <?php
-    
+    $myFile = fopen("Note.txt", "w") or die("Unable to open the file");
     ?>
 </body>
 </html>
