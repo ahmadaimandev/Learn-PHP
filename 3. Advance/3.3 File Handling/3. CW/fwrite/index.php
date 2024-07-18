@@ -8,15 +8,14 @@
 <body>
     <h2>Writing File</h2>
     <?php
-    $myFile = fopen("newfile.txt", "w") or die("Unable to find the file");
-    
-    $txt = "Luke, Im your father";
-    fwrite($myFile, $txt);
+    $myfile = fopen("note.txt", "w") or die("Unable to open the file");
+    $txt1 = "John Doe\n";
+    fwrite($myfile, $txt1);
 
-    $txt = "No You Are Not!!";
-    fwrite($myFile, $txt);
-    
-    fclose($myFile);
+    $txt2 = "John Doe\n";
+    fwrite($myfile, $txt2);
+
+    fclose($myfile);
     ?>
 </body>
 </html>
