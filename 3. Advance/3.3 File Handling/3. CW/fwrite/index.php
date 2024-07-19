@@ -14,6 +14,9 @@
 
     $txt2 = "Jane Doe Was Here Too\n";
     fwrite($myFile,$txt2);
+
+    $txt3 = "James Doe Was Here Too...All Along\n";
+    fwrite($myFile,$txt3);
     
     fclose($myFile);
     ?>
