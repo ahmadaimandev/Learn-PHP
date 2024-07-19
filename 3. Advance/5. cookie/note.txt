@@ -11,3 +11,4 @@ Create Cookies With A PHP
 Syntax:
 setcookie(name, value, expire, path, domain, secure, httponly);
 Only the name parameter is required. All other parameters are optional.
+
