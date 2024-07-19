@@ -2,4 +2,6 @@ PHP Cookie
 
 What is cookie ?
 -> Often used to identified a user. A cookie is a small file that the servers embeds on the user's computer.
--> Ea
+-> Each time the same computer request a page with a browser, it will send the cookie too.
+
+-> With PHP, you can both create and retrieve cookies values
