@@ -8,7 +8,13 @@
 <body>
     <h2>Write A File</h2>
     <?php
-    
+    $myFile = fopen("write.txt", 'w') or die("Unable to open file!");
+    $txt = "John Doe Was Here\n";
+    fwrite($myFile, $txt); 
+
+    $txt = "Jane Doe Was Here Also\n";
+    fwrite($myFile, $txt);
+    fclose($myFile);
     ?>
 </body>
 </html>
