@@ -22,5 +22,13 @@
 
     echo readfile("newfile.txt");
     ?>
+
+    <?php
+    //append text//
+    $myFile = fopen("newfile.txt", "a") or die ("Unable to open the file!");
+    $txt4 = "Mickey Mouse is a very funny mouse!\n";
+    fwrite($myFile,$txt4);
+    fclose($myFile);
+    ?>
 </body>
 </html>
