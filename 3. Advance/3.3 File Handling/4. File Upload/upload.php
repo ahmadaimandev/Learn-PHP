@@ -1,8 +1,12 @@
 <?php
 $target_dir = "uploads/";
+//Specifies the directory where the file is going to be replaced
 $target_file = $targer_dir .basename($_FILES["fileToUpload"]["name"]);
+//Specifies the path of the file to be uploaded
 $uploadOk = 1;
+//Is not used yet (will be used later)
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+//Hold the file extension of the file (in lower case)
 
 
 //This will check image an actual image or fake image
