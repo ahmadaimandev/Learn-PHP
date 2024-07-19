@@ -1,4 +1,5 @@
 PHP Cookie
 
 What is cookie ?
--> Often used to identified a user.
+-> Often used to identified a user. A cookie is a small file that the servers embeds on the user's computer.
+-> Ea
