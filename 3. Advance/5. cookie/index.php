@@ -1,6 +1,6 @@
 <?php
     $cookie_name = "user";
-    $cookie_value = "John Doe";
+    $cookie_value = "Alex Porter";
     setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day  1 day=24×60×60=86400 seconds
     ?>
 <!-- Note: The setcookie() function must appear BEFORE the <html> tag. -->
