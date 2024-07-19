@@ -1,0 +1,4 @@
+PHP Cookie
+
+What is cookie ?
+-> Often used to identified a user.
