@@ -9,10 +9,13 @@
     <h2>Write A File</h2>
     <?php
     $myFile = fopen("newfile.txt", "w") or die ("Unable to open the file!");
-    $txt = "John Doe Was here\n";
-    fwrite($myFile,$txt);
+    $txt1 = "John Doe Was here\n";
+    fwrite($myFile,$txt1);
 
+    $txt2 = "Jane Doe Was Here Too\n";
+    fwrite($myFile,$txt2);
     
+    fclose($myFile);
     ?>
 </body>
 </html>
