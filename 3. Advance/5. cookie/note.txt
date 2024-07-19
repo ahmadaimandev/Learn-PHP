@@ -2,6 +2,12 @@ PHP Cookie
 
 What is cookie ?
 -> Often used to identified a user. A cookie is a small file that the servers embeds on the user's computer.
--> Each time the same computer request a page with a browser, it will send the cookie too.
-
+-> Each time the same computer request a page with a browser, it will send the cookie too.  
 -> With PHP, you can both create and retrieve cookies values
+
+Create Cookies With A PHP
+-> Use setcookie() function
+
+Syntax:
+setcookie(name, value, expire, path, domain, secure, httponly);
+Only the name parameter is required. All other parameters are optional.
