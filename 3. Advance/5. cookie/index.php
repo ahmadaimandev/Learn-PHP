@@ -2,6 +2,9 @@
     $cookie_name = "user";
     $cookie_value = "Alex Porter";
     setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day  1 day=24×60×60=86400 seconds
+
+    //set the expiration date to one hour
+    setCookie("user", "",time() - 3600);
     ?>
 <!-- Note: The setcookie() function must appear BEFORE the <html> tag. -->
 <!DOCTYPE html>
@@ -20,6 +23,10 @@
         echo "Cookie '" . $cookie_name . "' is set!<br>";
         echo "Value is: " . $_COOKIE[$cookie_name];
     }
+    ?>
+
+    <?php
+    echo "Cookie user has been deleted";
     ?>
 </body>
 </html>
