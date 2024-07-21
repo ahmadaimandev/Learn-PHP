@@ -5,6 +5,9 @@
 
     //set the expiration date to one hour
     setCookie("user", "",time() - 3600);
+
+    //check if cookies are enabled
+    setcookie("test_cookie", "test", time() + 3600, '/');
     ?>
 <!-- Note: The setcookie() function must appear BEFORE the <html> tag. -->
 <!DOCTYPE html>
@@ -32,6 +35,11 @@
     <?php
     //Check if cookies are enabled//
     //This example creates a small script that checks wheater cookies are enabled or not.
+    if (count($_COOKIE) > 0) {
+        echo "Cookies are enabled.";
+    } else {
+        echo "Cookies are disabled.";
+    }
     ?>
 </body>
 </html>
