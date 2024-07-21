@@ -28,5 +28,10 @@
     <?php
     echo "Cookie user has been deleted";
     ?>
+    
+    <?php
+    //Check if cookies are enabled//
+    //This example creates a small script that checks wheater cookies are enabled or not.
+    ?>
 </body>
 </html>
