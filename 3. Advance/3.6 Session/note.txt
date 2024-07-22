@@ -25,3 +25,7 @@ How Does Session Work ?
 -> Most session set a user-key on the user's computer that look something like this: 765487cf34ert8dede5a562e4f3a7e12
 -> When the session is opened, on another page, it scans the computer for a user-key that matches the one it has.
 -> If not matches, it will start a new session.
+
+
+Modify a PHP session variable
+-> To change, just overwrite it.
