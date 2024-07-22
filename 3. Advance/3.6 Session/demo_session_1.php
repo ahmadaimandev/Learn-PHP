@@ -14,9 +14,10 @@
     <h1>PHP Session</h1>
     <?php
     //Set session variable
+    /*
     $_SESSION["username"] = "Jong-Wook Park";
     $_SESSION["Id_number"] = "KOR-12345678";
-    echo "Session variable set!";
+    echo "Session variable set!";*/
     ?>
 
     <h2>Another way to show all session variables</h2>
