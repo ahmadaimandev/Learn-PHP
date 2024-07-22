@@ -21,6 +21,7 @@
 </style>
 
 <body>
+    <h2>filter_list() function</h2>
     <table>
         <tr>
             <td>Filter Name</td>
@@ -36,6 +37,8 @@
         }
         ?>
     </table>
+
+    <h2>filter_var() function</h2>
 </body>
 
 </html>
