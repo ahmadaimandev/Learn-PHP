@@ -1,0 +1,11 @@
+PHP Session
+
+-> Session is a way to store information (in variables) to be used across multiple pages.
+-> Unlike cookie,the information is not stored on the users computer.
+
+What is PHP Session
+-> When you work on application, you open it,and then you close it. This much like a session.
+-> The computers know who you are. It knows when you start the application and when you end it.
+
+Problem
+-> The web server does not know who you are or what you do, because the HTTP address doesn't maintain state.
