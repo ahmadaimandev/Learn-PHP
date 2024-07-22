@@ -19,3 +19,5 @@ TIPS: if you need a permanent storage, you may want to store the data in databas
 Start a PHP Session
 -> Session is started with the session_start() function.
 -> Session variables are set with the PHP global variable: $_SESSION
+
+Get PHP Session Variables Values
