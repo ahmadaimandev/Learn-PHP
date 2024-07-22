@@ -1,0 +1,9 @@
+PHP Filters
+
+-> Validating data: Determine if the data is in proper or Note.
+-> Sanitizing data: Remove any illegal character from the data.
+
+PHP Filters Extension
+-> PHP filters are used to validate and sanitize external input.
+-> It has many functions needed for checking user input, and is designed to make data validation easier and quicker.
+-> Use filter_list() function to list what the PHP filter extensions offer.
