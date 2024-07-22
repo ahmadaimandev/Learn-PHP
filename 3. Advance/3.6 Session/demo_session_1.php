@@ -18,5 +18,10 @@
     $_SESSION["Id_number"] = "KOR-12345678";
     echo "Session variable set!";
     ?>
+
+    <h2>Another way to show all session variables</h2>
+    <?php
+    print_r($_SESSION);
+    ?>
 </body>
 </html>
