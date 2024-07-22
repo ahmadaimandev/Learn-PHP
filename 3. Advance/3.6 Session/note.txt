@@ -13,3 +13,9 @@ Problem
 Eg: username, favorite color, etc
 -> By default, session variables last until the user closes the browser.
 -> So session variables hold information about one single user, and are available to all pages in one application.
+
+TIPS: if you need a permanent storage, you may want to store the data in database.
+
+Start a PHP Session
+-> Session is started with the session_start() function.
+-> Session variables are set with the PHP global variable: $_SESSION
