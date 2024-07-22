@@ -14,5 +14,6 @@
         "strtoupper",
         "substr",
         "uppertext"
-    ]
+    ],
+    "php.version": "8.3"
 }

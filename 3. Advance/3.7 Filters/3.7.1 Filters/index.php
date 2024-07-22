@@ -38,7 +38,14 @@
         ?>
     </table>
 
-    <h2>filter_var() function</h2>
+    <h1>filter_var() function</h1>
+    <h3>Sanitize A String</h3>
+    <?php
+    //This example uses the filter_var() function to remove all HTML tags from a string.
+    $oldstr = "<h5>Hello World! Welcome To Fox News</h5>";
+    $newstr = filter_var($str, FILTER_SANITIZE_STRING);
+    echo $newstr;
+    ?>
 </body>
 
 </html>
