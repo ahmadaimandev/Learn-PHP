@@ -27,6 +27,10 @@
             <td>Filter ID</td>
         </tr>
         <?php
+        /**
+         * filter_list() will return an array of all the available filter names in PHP
+         * Each filter is represented by a string
+         */
         foreach (filter_list() as $id => $filter) {
             echo '<tr><td>' . $filter . '</td><td>' . filter_id($filter) . '</td></tr>';
         }

@@ -7,3 +7,10 @@ PHP Filters Extension
 -> PHP filters are used to validate and sanitize external input.
 -> It has many functions needed for checking user input, and is designed to make data validation easier and quicker.
 -> Use filter_list() function to list what the PHP filter extensions offer.
+
+Why Use Filters ?
+* User input from the from
+* Cookies
+* Web Services data
+* Server Variables 
+* Database query results
