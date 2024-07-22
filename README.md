@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.php.net/images/logos/new-php-logo.svg" alt="PHP Logo" width="200">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/PHP_Logo.png?20140913091330" alt="PHP Logo" width="200">
 </p>
 
 Welcome to the **Learn-PHP** repository! This is where I store my PHP code while learning at W3Schools. Feel free to explore the code, provide feedback, or use it as a reference for your own learning journey.
