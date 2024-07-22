@@ -8,4 +8,8 @@ What is PHP Session
 -> The computers know who you are. It knows when you start the application and when you end it.
 
 Problem
--> The web server does not know who you are or what you do, because the HTTP address doesn't maintain state.
+-> The web server does not know who you are or what you do, because the HTTP address doesn't maintain state.    
+-> Session variables solve this problem by storing user information to be used across multiple pages.
+Eg: username, favorite color, etc
+-> By default, session variables last until the user closes the browser.
+-> So session variables hold information about one single user, and are available to all pages in one application.
