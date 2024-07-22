@@ -10,6 +10,10 @@ session_start();
     <title>Display Session Value</title>
 </head>
 <body>
-    
+    <h1>Display session variable</h1>   
+    <?php
+    echo "Username: " . $_SESSION["username"] . "<br>";
+    echo "Id number: " . $_SESSION["Id_number"] . "<br>";
+    ?>
 </body>
 </html>
