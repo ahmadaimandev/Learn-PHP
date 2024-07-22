@@ -12,6 +12,11 @@
 </head>
 <body>
     <h1>PHP Session</h1>
-  
+    <?php
+    //Set session variable
+    $_SESSION["username"] = "Jong-Wook Park";
+    $_SESSION["Id_number"] = "KOR-12345678";
+    echo "Session variable set!";
+    ?>
 </body>
 </html>
