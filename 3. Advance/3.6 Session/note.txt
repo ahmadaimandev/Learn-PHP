@@ -29,3 +29,6 @@ How Does Session Work ?
 
 Modify a PHP session variable
 -> To change, just overwrite it.
+
+Destroy PHP Session
+-> To remove all global session variables and destroy session, use session_unset() session_destroy() functions.
