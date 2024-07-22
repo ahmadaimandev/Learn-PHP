@@ -14,3 +14,7 @@ Why Use Filters ?
 * Web Services data
 * Server Variables 
 * Database query results
+
+You should always validate external data!
+- Invalid submitted data can lead to security problems and break your webpage!
+- By using PHP filters you can be sure your application gets the correct input!
