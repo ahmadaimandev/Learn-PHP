@@ -131,9 +131,9 @@
         "https://www.google.com/search?q=php&oq=php",
         "http://www.google.com/search?q=php&oq=php",
      );
-     
+
      foreach ($url as $urlList) {
-        echo "URL: " . $urlList . "<br>";
+        echo "url name: " . $urlList . "<br>";
 
         //remove all illegal characters from the url
         $urlList = filter_var($urlList, FILTER_SANITIZE_URL);
@@ -146,6 +146,8 @@
         }
      }
     ?>
+
+    <h2>Check The Value Is INteger Or Not</h2>
 </body>
 
 </html>
