@@ -89,9 +89,20 @@
     <h2>Sanitize and Validate an Email Address</h2>
     <?php
     /**
-     * The following example uses the filter_var() function to first remove all illegal characters from the $email variable, 
+     * The following example uses the filter_var() function to first remove all 
+     * illegal characters from the $email variable, 
      * then check if it is a valid email address:
      */
+    $UserEmail = array ("aimanzulbahari@gmail.com", "aimanzulbahari@yahoo.com", "aimanzulbahari@hotmail.com");
+    foreach ($UserEmail as $EmailList) {
+        echo "Email Address: " . $EmailList . "<br>";
+        $EmailList = filter_var($EmailList, FILTER_SANITIZE_EMAIL);
+        if (!filter_var($EmailList, FILTER_VALIDATE_EMAIL) === false) {
+            echo "Email Address is valid";
+        }else {
+            echo ("Email Address is not valid") . "<br>";
+        }
+    }
     ?>
 </body>
 
