@@ -66,6 +66,7 @@
         echo ("Integer is not valid") . "<br>";
     }
     ?>
+    
 </body>
 
 </html>
