@@ -48,6 +48,16 @@
     ?>
 
     <h2>Validate An Integer</h2>
+    <?php
+    //This example will check the variable is int or not.
+    $firstInt = 100;
+    $seconInt = "100";
+    if (!filter_var($firstInt, FILTER_VALIDATE_INT) === false) {
+        echo ("Integer is valid");
+    }else {
+        echo ("Integer is not valid") . "<br>";
+    }
+    ?>
 </body>
 
 </html>

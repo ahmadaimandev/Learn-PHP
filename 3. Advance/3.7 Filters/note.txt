@@ -27,3 +27,4 @@ filter_var() function
 - Filter a single variable with a specified filter.
 * The variable you want to check.
 * The types check of use.
+
