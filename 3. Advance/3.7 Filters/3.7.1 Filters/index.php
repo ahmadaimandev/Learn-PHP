@@ -72,6 +72,16 @@
         echo ("Integer is not valid") . "<br>";
     }
     ?>
+
+    <h2>Validate An IP Address</h2>
+    <?php
+    $LocalIP = "10.150.245.45";
+    if (!filter_var($LocalIP, FILTER_VALIDATE_IP) === false) {
+        echo ("IP Address is valid");
+    }else {
+        echo ("IP Address is not valid") . "<br>";
+    }
+    ?>
 </body>
 
 </html>
