@@ -60,6 +60,11 @@
     
     <h2>filter_var() And With Problem 0 </h2>
     <?php
+    /**
+     * In the example, 
+     * if $int was set to 0, the function above will return "Integer is not valid". 
+     * To solve this problem, use the code below:
+     */
     $int = 0;
     if (filter_var($int, FILTER_VALIDATE_INT) === 0 || !filter_var($int, FILTER_VALIDATE_INT) === false) {
         echo ("Integer is valid");
