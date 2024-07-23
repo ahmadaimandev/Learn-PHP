@@ -42,7 +42,7 @@
     <h3>Sanitize A String</h3>
     <?php
     //This example uses the filter_var() function to remove all HTML tags from a string.
-    $oldstr = "<h5>Hello World! Welcome To Fox News</h5>";
+    $str = "<h1>Hello World!</h1>";
     $newstr = filter_var($str, FILTER_SANITIZE_STRING);
     echo $newstr;
     ?>
