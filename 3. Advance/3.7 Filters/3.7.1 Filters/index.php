@@ -67,6 +67,10 @@
     }
     ?>
     
+    <h2>filter_var() And With Problem 0 </h2>
+    <?php
+    
+    ?>
 </body>
 
 </html>
