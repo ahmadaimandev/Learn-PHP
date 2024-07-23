@@ -93,17 +93,26 @@
      * illegal characters from the $email variable, 
      * then check if it is a valid email address:
      */
-    $UserEmail = array ("aimanzulbahari@gmail.com", "aimanzulbahari@yahoo.com", "aimanzulbahari@hotmail.com", "aimanzulbahari");
+    $UserEmail = array(
+        "aimanzulbahari@gmail.com",
+        "aimanzulbahari@yahoo.com",
+        "aimanzulbahari@hotmail.com",
+        "aimanzulbaharifdfd@ffrfrf.com",
+        4545454
+    );
+    //looping through the array and checking if the email is valid or not.
     foreach ($UserEmail as $EmailList) {
         echo "Email Address: " . $EmailList . "<br>";
         $EmailList = filter_var($EmailList, FILTER_SANITIZE_EMAIL);
         if (!filter_var($EmailList, FILTER_VALIDATE_EMAIL) === false) {
-            echo "Email Address is valid";
+            echo "Email Address is valid" ."<br>";
         }else {
             echo ("Email Address is not valid") . "<br>";
         }
     }
     ?>
+
+
 </body>
 
 </html>
