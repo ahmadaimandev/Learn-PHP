@@ -118,6 +118,33 @@
      * The following example uses the filter_var() function to first remove all illegal characters from a URL, 
      * then check if $url is a valid URL:
      */
+
+     $url = array(
+        "https://www.google.com",
+        "http://www.google.com",
+        "www.google.com",
+        "google.com",
+        "www.google.com/search?q=php",
+        "google.com/search?q=php",
+        "https://www.google.com/search?q=php",
+        "http://www.google.com/search?q=php",
+        "https://www.google.com/search?q=php&oq=php",
+        "http://www.google.com/search?q=php&oq=php",
+     );
+     
+     foreach ($url as $urlList) {
+        echo "URL: " . $urlList . "<br>";
+
+        //remove all illegal characters from the url
+        $urlList = filter_var($urlList, FILTER_SANITIZE_URL);
+
+        //validate the url
+        if (!filter_var($urlList, FILTER_VALIDATE_URL) === false) {
+            echo "URL is valid" ."<br>";
+        }else {
+            echo ("URL is not valid") . "<br>";
+        }
+     }
     ?>
 </body>
 
