@@ -75,6 +75,9 @@
 
     <h2>Validate An IP Address</h2>
     <?php
+    /**
+     * The following example uses the filter_var() function to check if the variable $ip is a valid IP address:
+     */
     $LocalIP = "10.150.245.45";
     if (!filter_var($LocalIP, FILTER_VALIDATE_IP) === false) {
         echo ("IP Address is valid");
