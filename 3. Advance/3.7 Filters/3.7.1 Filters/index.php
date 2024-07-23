@@ -46,6 +46,8 @@
     $newstr = filter_var($str, FILTER_SANITIZE_STRING);
     echo $newstr;
     ?>
+
+    <h2>Validate An Integer</h2>
 </body>
 
 </html>
