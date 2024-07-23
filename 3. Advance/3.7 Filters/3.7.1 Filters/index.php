@@ -53,11 +53,11 @@
     $firstInt = 100;
     if (!filter_var($firstInt, FILTER_VALIDATE_INT) === false) {
         echo ("Integer is valid");
-    }else {
+    } else {
         echo ("Integer is not valid") . "<br>";
     }
     ?>
-    
+
     <h2>filter_var() And With Problem 0 </h2>
     <?php
     /**
@@ -68,7 +68,7 @@
     $int = 0;
     if (filter_var($int, FILTER_VALIDATE_INT) === 0 || !filter_var($int, FILTER_VALIDATE_INT) === false) {
         echo ("Integer is valid");
-    }else {
+    } else {
         echo ("Integer is not valid") . "<br>";
     }
     ?>
@@ -81,7 +81,7 @@
     $LocalIP = "10.150.245.45";
     if (!filter_var($LocalIP, FILTER_VALIDATE_IP) === false) {
         echo ("IP Address is valid");
-    }else {
+    } else {
         echo ("IP Address is not valid") . "<br>";
     }
     ?>
@@ -105,8 +105,8 @@
         echo "Email Address: " . $EmailList . "<br>";
         $EmailList = filter_var($EmailList, FILTER_SANITIZE_EMAIL);
         if (!filter_var($EmailList, FILTER_VALIDATE_EMAIL) === false) {
-            echo "Email Address is valid" ."<br>";
-        }else {
+            echo "Email Address is valid" . "<br>";
+        } else {
             echo ("Email Address is not valid") . "<br>";
         }
     }
@@ -119,7 +119,7 @@
      * then check if $url is a valid URL:
      */
 
-     $url = array(
+    $url = array(
         "https://www.google.com",
         "http://www.google.com",
         "www.google.com",
@@ -130,9 +130,9 @@
         "http://www.google.com/search?q=php",
         "https://www.google.com/search?q=php&oq=php",
         "http://www.google.com/search?q=php&oq=php",
-     );
+    );
 
-     foreach ($url as $urlList) {
+    foreach ($url as $urlList) {
         echo "url name: " . $urlList . "<br>";
 
         //remove all illegal characters from the url
@@ -140,14 +140,19 @@
 
         //validate the url
         if (!filter_var($urlList, FILTER_VALIDATE_URL) === false) {
-            echo "URL is valid" ."<br>";
-        }else {
+            echo "URL is valid" . "<br>";
+        } else {
             echo ("URL is not valid") . "<br>";
         }
-     }
+    }
     ?>
 
-    <h2>Check The Value Is INteger Or Not</h2>
+    <h2>Check The Value Is Integer Or Not</h2>
+    <?php
+    $intOrnot = array(
+        
+    )
+    ?>
 </body>
 
 </html>
