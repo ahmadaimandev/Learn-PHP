@@ -150,8 +150,25 @@
     <h2>Check The Value Is Integer Or Not</h2>
     <?php
     $intOrnot = array(
-        
-    )
+        100,
+        10.23,
+        "23"
+    );
+
+    foreach ($intOrnot as $list) {
+        echo "integer or not: " . $list . "<br>";
+
+        //remove all illegal characters from the url
+        $urlList = filter_var($urlList, FILTER_VALIDATE_INT);
+
+        //validate the url
+        if (!filter_var($urlList, FILTER_VALIDATE_INT) === false) {
+            echo "URL is valid" . "<br>";
+        } else {
+            echo ("URL is not valid") . "<br>";
+        }
+    }
+
     ?>
 </body>
 
