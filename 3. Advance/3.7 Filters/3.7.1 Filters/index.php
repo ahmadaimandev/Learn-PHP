@@ -85,6 +85,14 @@
         echo ("IP Address is not valid") . "<br>";
     }
     ?>
+
+    <h2>Sanitize and Validate an Email Address</h2>
+    <?php
+    /**
+     * The following example uses the filter_var() function to first remove all illegal characters from the $email variable, 
+     * then check if it is a valid email address:
+     */
+    ?>
 </body>
 
 </html>
