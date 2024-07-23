@@ -51,10 +51,18 @@
     <?php
     //This example will check the variable is int or not.
     $firstInt = 100;
-    $seconInt = "100";
     if (!filter_var($firstInt, FILTER_VALIDATE_INT) === false) {
         echo ("Integer is valid");
     }else {
+        echo ("Integer is not valid") . "<br>";
+    }
+    ?>
+
+    <?php
+    $SecondInt = "100";
+    if (!filter_var($SecondInt, FILTER_VALIDATE_INT) === true) {
+        echo ("Integer is valid");
+    } else {
         echo ("Integer is not valid") . "<br>";
     }
     ?>
