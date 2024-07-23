@@ -111,6 +111,14 @@
         }
     }
     ?>
+
+    <h2>Sanitize and Validate URL</h2>
+    <?php
+    /**
+     * The following example uses the filter_var() function to first remove all illegal characters from a URL, 
+     * then check if $url is a valid URL:
+     */
+    ?>
 </body>
 
 </html>
