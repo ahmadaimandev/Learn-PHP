@@ -163,9 +163,9 @@
 
         //validate the url
         if (!filter_var($urlList, FILTER_VALIDATE_INT) === false) {
-            echo "URL is valid" . "<br>";
+            echo "Valid Integer" . "<br>";
         } else {
-            echo ("URL is not valid") . "<br>";
+            echo ("Invalid Integer") . "<br>";
         }
     }
 
