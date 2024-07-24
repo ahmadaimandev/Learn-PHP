@@ -55,6 +55,8 @@
     $jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
     var_dump(json_decode($jsonobj, true));
     ?>
+
+    <h1>PHP - Accessing the Decoded Values</h1>
 </body>
 
 </html>
