@@ -6,4 +6,7 @@ PHP and JSON
 * Since JSON format is a text-based format, it can easily be sent to and from a server, and used as a data 
 format by any programming language.
 
-PHP and JSON
+-> PHP and JSON
+* PHP has some built-in functions to handle JSON.
+1. json_encode()
+2. json_decode()    
