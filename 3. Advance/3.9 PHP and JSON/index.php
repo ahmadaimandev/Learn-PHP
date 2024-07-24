@@ -6,9 +6,9 @@
     <title>PHP and JSON</title>
 </head>
 <body>
-    <h1>json_encode() - Example 1</h1>
+    <h1>json_encode()</h1>
     <?php
-    echo "<h2>PHP - JSON_encode()</h2>";
+    echo "<h2>json_encode() - Example 1()</h2>";
     echo "<p>The json_encode() function is used to encode a value to JSON format.</p>";
     #This example shows how to encode an associative array into a JSON object:
     $age = array (
@@ -32,6 +32,14 @@
     echo json_encode($cars) ."<br>";
     ?>
 
-    <h1>json_decode() - Example 1</h1>
+    <h1>json_decode()</h1>
+    <?php
+    echo "<h2>json_decode() - Example 1()</h2>";
+    echo "<p>The json_decode() function is used to decode a JSON object into a PHP object or an associative array</p>";
+    #This example decodes JSON data into a PHP object:
+
+    $jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+    var_dump(json_decode($jsonobj));
+    ?>
 </body>
 </html>
