@@ -6,7 +6,8 @@
     <title>Callback Functions</title>
 </head>
 <body>
-    <h1>First Example</h1>
+    <h1>Example 1</h1>
+    <h2>Callback Functions</h2>
     <?php
     #Pass a callback to PHP's array_map() function to calculate the length of every string in an array:
     function my_callback($item) {
@@ -38,6 +39,12 @@
 
         $lengths = array_map( function($item) { return strlen($item); }, $strings);
         print_r($lengths);
+    ?>  
+
+    <h1>Example 3</h1>
+    <h2>Callbacks in User Defined Functions</h2>
+    <?php
+    
     ?>
 </body>
 </html>
