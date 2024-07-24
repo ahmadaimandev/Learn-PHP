@@ -1,0 +1,9 @@
+PHP and JSON
+
+-> What is JSON ?
+* JSON stands for Javascript Object Notation.
+* Its a syntax for storing and exchangin data.
+* Since JSON format is a text-based format, it can easily be sent to and from a server, and used as a data 
+format by any programming language.
+
+PHP and JSON
