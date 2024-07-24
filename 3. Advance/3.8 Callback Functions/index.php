@@ -22,5 +22,22 @@
     $lengths = array_map("my_callback", $strings);
     print_r($lengths);
     ?>
+
+    <p>Starting with version 7, PHP can pass anonymous functions as callback functions:</p>
+
+    <h1>Example 2</h1>
+    <?php
+    #Use an anonymous function as a callback for PHP's array_map() function:
+        $strings = [
+            "Hello",
+            "World",
+            "Javascript",
+            "can be used",  
+            "Frontend and Backend"
+        ];
+
+        $lengths = array_map( function($item) { return strlen($item); }, $strings);
+        print_r($lengths);
+    ?>
 </body>
 </html>
