@@ -44,7 +44,7 @@
     <h1>Example 3</h1>
     <h2>Callbacks in User Defined Functions</h2>
     <?php
-    
+    #Run a callback from a user-defined function:
     ?>
 </body>
 </html>
