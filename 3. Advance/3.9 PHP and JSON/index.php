@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP and JSON</title>
 </head>
-
 <body>
+    <h1>PHP And JSON</h1>
+    <?php
+    echo "<h2>PHP - json_encode()</h2>";
+    echo "<p>The json_encode() function is used to encode a value to JSON format.</p>";
+    echo "<h3>Example 1</h3>";
+    #
+    ?>
 </html>
