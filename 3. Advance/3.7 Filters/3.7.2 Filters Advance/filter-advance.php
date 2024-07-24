@@ -88,13 +88,7 @@
         "&lt;h1&gt;Hello WorldÆØÅ!&lt;/h1&gt; &lt;h1&gt;Hello WorldÆØÅ!&lt;/h1&gt;",
     );
 
-    foreach ($str as $checkString) {
-        if (!filter_var($checkString, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH) === false) {
-            echo ("String is valid") ."<br>";
-        }else {
-            echo ("String is not valid") ."<br>";   
-        }
-    }
+    
     ?>
 </body>
 </html>
