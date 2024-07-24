@@ -2,3 +2,5 @@ PHP Callback Functions
 
 -> Callback Functions
 * callback function or can be refered as 'callback' is a function that passed an argument into another function.
+* Any existing function can be used as a callback function.
+* To use the function just pass a string in the name of the functions as the argument of another function.
