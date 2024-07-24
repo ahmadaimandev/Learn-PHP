@@ -12,6 +12,15 @@
     echo "<h2>PHP - json_encode()</h2>";
     echo "<p>The json_encode() function is used to encode a value to JSON format.</p>";
     echo "<h3>Example 1</h3>";
-    #
+    #This example shows how to encode an associative array into a JSON object:
+
+    $age = array (
+        "Ahmad" => 34,
+        "Samad" => 56,
+        "Jalil" => 67
+    );
+
+    echo json_encode( $age ) ."<br>";
+    print_r( $age );
     ?>
 </html>
