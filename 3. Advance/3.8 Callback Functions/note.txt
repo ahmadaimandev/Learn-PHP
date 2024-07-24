@@ -1,0 +1,4 @@
+PHP Callback Functions
+
+-> Callback Functions
+* callback function or can be refered as 'callback' is a function that passed an argument into another function.
