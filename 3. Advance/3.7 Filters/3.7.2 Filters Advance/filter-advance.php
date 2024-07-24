@@ -67,5 +67,34 @@
             }
         }
     ?>
+
+    <?php
+    echo "<h2>Remove Characters With ASCII Value > 127</h2>";
+    #example uses the filter_var() function to sanitize a string. It will both remove all HTML tags, 
+    #and all characters with ASCII value > 127, from the string:
+
+    $str = array (
+        "<h1>Hello World</h1>",
+        "Hello World",
+        "Hello World <h1>Hello World</h1>",
+        "Hello World <h1>Hello World</h1> <h1>Hello World</h1>",
+        "<h1>Hello WorldÆØÅ!</h1>",
+        "Hello WorldÆØÅ!",
+        "Hello WorldÆØÅ! <h1>Hello WorldÆØÅ!</h1>",
+        "Hello WorldÆØÅ! <h1>Hello WorldÆØÅ!</h1> <h1>Hello WorldÆØÅ!</h1>",
+        "&lt;h1&gt;Hello World&lt;/h1&gt;",
+        "&lt;h1&gt;Hello World&lt;/h1&gt; &lt;h1&gt;Hello World&lt;/h1&gt;",
+        "&lt;h1&gt;Hello WorldÆØÅ!&lt;/h1&gt;",
+        "&lt;h1&gt;Hello WorldÆØÅ!&lt;/h1&gt; &lt;h1&gt;Hello WorldÆØÅ!&lt;/h1&gt;",
+    );
+
+    foreach ($str as $checkString) {
+        if (!filter_var($checkString, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH) === false) {
+            echo ("String is valid") ."<br>";
+        }else {
+            echo ("String is not valid") ."<br>";   
+        }
+    }
+    ?>
 </body>
 </html>
