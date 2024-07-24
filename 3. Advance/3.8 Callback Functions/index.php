@@ -45,6 +45,22 @@
     <h2>Callbacks in User Defined Functions</h2>
     <?php
     #Run a callback from a user-defined function:
+    function exclaim($str) {
+        return $str ."!";
+    }
+
+    function question($str) {
+        return $str ."?";
+    }
+
+    function printFormatted($str, $format) {
+        // Calling the $format callback function
+        echo $format($str);
+    }
+
+    //Pass the "exclaim" and "ask" as callback functions to printFormatted()
+    printFormatted("Hello World", "exclaim") ."<br>";
+    printFormatted("How are you?", "question");
     ?>
 </body>
 </html>
