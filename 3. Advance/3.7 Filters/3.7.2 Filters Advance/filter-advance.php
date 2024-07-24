@@ -96,5 +96,11 @@
         }
     }
     ?>
+
+    <?php
+    $old = "<h1>Hello WorldÆØÅ!</h1>";
+    $new = filter_var($old, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+    echo $new ."<br>";
+    ?>
 </body>
 </html>
