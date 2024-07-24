@@ -44,5 +44,28 @@
             }
         }
     ?>
+
+    <?php
+    echo "<h2>Validate URL - Must Contain QueryString</h2>";
+    #xample uses the filter_var() function to check if the variable $url is a URL with a querystring:
+        $url = array(
+            "http://www.example.com/index.php?id=1",
+            "https://www.example.com/index.php?id=1",
+            "ftp://www.example.com/index.php?id=1",
+            "mailto:example@example.com?subject=Hello%20World",
+            "tel:+1234567890",
+            "sms:+1234567890",
+            "data:text/plain;charset=utf-8,Hello%20World",
+            "javascript:alert('Hello%20World')"
+        );
+
+        foreach ($url as $urlListCheck) {
+            if(!filter_var($urlListCheck, FILTER_VALIDATE_URL, FILTER_FLAG_QUERY_REQUIRED) === false) {
+                echo ("URL is valid") ."<br>";
+            }else {
+                echo ("URL is not valid") ."<br>";
+            }
+        }
+    ?>
 </body>
 </html>
