@@ -31,5 +31,7 @@
     );
     echo json_encode($cars) ."<br>";
     ?>
+
+    <h1>json_decode() - Example 1</h1>
 </body>
 </html>
