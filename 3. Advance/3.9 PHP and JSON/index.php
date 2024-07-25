@@ -77,4 +77,29 @@
     echo $arr["Joe"];
     ?>
 
+    <?php
+    echo "<h2>PHP - Looping Through the Values</h2>";
+    echo "<p>You can also loop through the values with a foreach() loop:</p>";
+    echo "<h2>Example 1</h2>";
+    #This example shows how to loop through the values of a PHP object:
+    
+    $jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+
+    $obj = json_decode($jsonobj);
+    foreach ($obj as $key => $value) {
+        echo $key . " => " . $value . "<br>";
+    }
+    ?>
+
+    <?php
+    echo "<h2>Example 2</h2>";
+    $jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+    $arr = json_decode($jsonobj, true);
+
+    foreach ($arr as $key => $value) {
+        echo $key . " => " . $value . "<br>";
+    }
+    ?>
+</body>
+
 </html>
