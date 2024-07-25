@@ -34,5 +34,18 @@
     );
 
     echo json_encode( $cars ) ."<br>";  
+    print( $cars );
+    ?>
+
+    <?php
+    echo "<h2>PHP - json_decode()</h2>";
+    echo "<p>The json_decode() function is used to decode a JSON object into a PHP object or an associative array.</p>";
+    echo "<h3>Example 1</h3>";
+    #This example decodes JSON data into a PHP object:
+    $jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+    var_dump(json_decode($jsonobj)) ."<br>";
+    #The json_decode() function returns an object by default. The json_decode() function has a second parameter, 
+    #and when set to true, JSON objects are decoded into associative arrays.
+    var_dump(json_decode($jsonobj, true))
     ?>
 </html>
