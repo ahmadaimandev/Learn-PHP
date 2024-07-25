@@ -31,6 +31,7 @@
     var_dump($d);
     var_dump($e);
     ?>
+    <h1>Cast To Integer</h1>
 </body>
 
 </html>
