@@ -65,4 +65,16 @@
     echo $obj->Joe;
     ?>
 
+    <?php
+    echo "<h2>Example 2</h2>";
+    #This example shows how to access the values from a PHP associative array:
+    $jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+
+    $arr = json_decode($jsonobj, true);
+
+    echo $arr["Peter"];
+    echo $arr["Ben"];
+    echo $arr["Joe"];
+    ?>
+
 </html>
