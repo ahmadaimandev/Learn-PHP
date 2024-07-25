@@ -81,7 +81,7 @@
     $e = (float) $e;
     $f = (float) $f;
     $g = (float) $g;
-    
+
     //To verify the type of any object in PHP, use the var_dump() function:
     var_dump($a);
     var_dump($b);
@@ -115,7 +115,7 @@
     $g = (bool) $g;
     $h = (bool) $h;
     $i = (bool) $i;
-    
+
     //To verify the type of any object in PHP, use the var_dump() function:
     var_dump($a);
     var_dump($b);
@@ -126,6 +126,57 @@
     var_dump($g);
     var_dump($h);
     var_dump($i);
+    ?>
+
+    <h1>Cast To Array</h1>
+    <p>To cast to array, use the (array) statement:</p>
+    <h2>Example 5</h2>
+    <?php
+    $a = 5;       // Integer
+    $b = 5.34;    // Float
+    $c = "hello"; // String
+    $d = true;    // Boolean
+    $e = NULL;    // NULL
+    
+    $a = (array) $a;
+    $b = (array) $b;
+    $c = (array) $c;
+    $d = (array) $d;
+    $e = (array) $e;
+
+    //To verify the type of any object in PHP, use the var_dump() function:
+    var_dump($a);
+    var_dump($b);
+    var_dump($c);
+    var_dump($d);
+    var_dump($e);
+    #When converting into arrays, most data types converts into an indexed array with one element.
+    #NULL values converts to an empty array object.
+    #Objects converts into associative arrays where the property names becomes the keys and the property values becomes the values:
+    ?>
+
+    <h2>Cast To Array - Example 5.1</h2>
+    <p>Converting Objects into Arrays:</p>
+    <?php
+    class Car
+    {
+        public $color;
+        public $model;
+        public function __construct($color, $model)
+        {
+            $this->color = $color;
+            $this->model = $model;
+        }
+        public function message()
+        {
+            return "My car is a " . $this->color . " " . $this->model . "!";
+        }
+    }
+
+    $myCar = new Car("red", "Volvo");
+
+    $myCar = (array) $myCar;
+    var_dump($myCar); ?>
     ?>
 </body>
 
