@@ -31,7 +31,66 @@
     var_dump($d);
     var_dump($e);
     ?>
+
     <h1>Cast To Integer</h1>
+    <p>To cast to integer, use the (int) statement:</p>
+    <h2>Example 2</h2>
+    <?php
+    $a = 5;       // Integer
+    $b = 5.34;    // Float
+    $c = "25 kilometers"; // String
+    $d = "kilometers 25"; // String
+    $e = "hello"; // String
+    $f = true;    // Boolean
+    $g = NULL;    // NULL
+    
+    $a = (int) $a;
+    $b = (int) $b;
+    $c = (int) $c;
+    $d = (int) $d;
+    $e = (int) $e;
+    $f = (int) $f;
+    $g = (int) $g;
+
+    //To verify the type of any object in PHP, use the var_dump() function:
+    var_dump($a);
+    var_dump($b);
+    var_dump($c);
+    var_dump($d);
+    var_dump($e);
+    var_dump($f);
+    var_dump($g);
+    ?>
+
+    <h1>Cast To Float</h1>
+    <p>To cast to float, use the (float) statement:</p>
+    <h2>Example 3</h2>
+    <?php
+    $a = 5;       // Integer
+    $b = 5.34;    // Float
+    $c = "25 kilometers"; // String
+    $d = "kilometers 25"; // String
+    $e = "hello"; // String
+    $f = true;    // Boolean
+    $g = NULL;    // NULL
+    
+    $a = (float) $a;
+    $b = (float) $b;
+    $c = (float) $c;
+    $d = (float) $d;
+    $e = (float) $e;
+    $f = (float) $f;
+    $g = (float) $g;
+    
+    //To verify the type of any object in PHP, use the var_dump() function:
+    var_dump($a);
+    var_dump($b);
+    var_dump($c);
+    var_dump($d);
+    var_dump($e);
+    var_dump($f);
+    var_dump($g);
+    ?>
 </body>
 
 </html>
