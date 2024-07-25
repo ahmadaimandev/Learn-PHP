@@ -49,4 +49,11 @@
     #and when set to true, JSON objects are decoded into associative arrays.
     var_dump(json_decode($jsonobj, true));
     ?>
+
+    <?php
+    echo "<h2>PHP - Accessing the Decoded Values</h2>";
+    echo "<p>Here are two examples of how to access the decoded values from an object and from an associative array:</p>";
+    echo "<h3>Example 1</h3>";
+    #This example shows how to access the values from a PHP object:
+    ?>
 </html>
