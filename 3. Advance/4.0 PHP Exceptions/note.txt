@@ -1,0 +1,29 @@
+PHP Exceptions
+
+-> What is an Exception?
+* An exception is an object that describes an error or unexpected behaviour of a PHP script.
+* Exception are thrown by maney functions and classes.
+* Exceptions are good way to stop a functions when it comes across data that it cannot use.
+
+-> Throwing an Exception
+* Throw statement allowed a user defined function or method to throw an exception.
+* When an exception is thrown, the following code it will not be executed.
+* If an exception is not caught, the script will stop.
+
+example:
+<?php
+function divide($dividend, $divisor)
+{
+    if ($divisor == 0) {
+        throw new Exception("Division by zero");
+    }
+    return $dividend / $divisor;
+}
+
+echo divide(5, 0);
+?>
+
+output:
+Fatal error: Uncaught Exception: Division by zero in C:\webfolder\test.php:4
+Stack trace: #0 C:\webfolder\test.php(9):
+divide(5, 0) #1 {main} thrown in C:\webfolder\test.php on line 4
