@@ -43,9 +43,10 @@
     echo "<h3>Example 1</h3>";
     #This example decodes JSON data into a PHP object:
     $jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
-    var_dump(json_decode($jsonobj)) ."<br>";
+    var_dump(json_decode($jsonobj)) ;
+    echo "<br>";
     #The json_decode() function returns an object by default. The json_decode() function has a second parameter, 
     #and when set to true, JSON objects are decoded into associative arrays.
-    var_dump(json_decode($jsonobj, true))
+    var_dump(json_decode($jsonobj, true));
     ?>
 </html>
