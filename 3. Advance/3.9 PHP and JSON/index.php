@@ -23,4 +23,16 @@
     echo json_encode( $age ) ."<br>";
     print_r( $age );
     ?>
+    <?php
+    echo "<h3>Example 2</h3>";
+    #This example shows how to encode an indexed array into a JSON array:
+    $cars = array(
+        "BMW",
+        "Mercedes",
+        "Audi",
+        "Volvo",
+    );
+
+    echo json_encode( $cars ) ."<br>";  
+    ?>
 </html>
