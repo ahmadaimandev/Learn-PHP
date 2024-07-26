@@ -10,6 +10,12 @@
     <p>Show a message when an exception is thrown:</p>
     <?php
     echo "<h2>Example 1</h2>"
+    function divide($dividend, $divisor) {
+        if ($divisor == 0) {
+            throw new Exception("Division by zero");
+        }
+        return $dividend / $divisor;
+    }
     ?>
 </body>
 </html>
