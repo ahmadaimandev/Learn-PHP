@@ -23,6 +23,11 @@
     } catch (Exception $e) {
         echo "unable to divide";
     }
+    /**
+     * The catch block indicates what type of exception should be caught 
+     * and the name of the variable which can be used to access the exception
+     * In the example above, the type of exception is Exception and the variable name is $e.
+     */
     ?>
 </body>
 </html>
