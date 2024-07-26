@@ -6,6 +6,10 @@
     <title>Exceptions</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <h1>Exceptions</h1>
+    <p>Show a message when an exception is thrown:</p>
+    <?php
+    echo "<h2>Example 1</h2>"
+    ?>
 </body>
 </html>
