@@ -15,25 +15,5 @@
         "substr",
         "uppertext"
     ],
-    "php.version": "8.3",
-    "workbench.colorCustomizations": {
-        "activityBar.activeBackground": "#f48898",
-        "activityBar.background": "#f48898",
-        "activityBar.foreground": "#15202b",
-        "activityBar.inactiveForeground": "#15202b99",
-        "activityBarBadge.background": "#ccfac5",
-        "activityBarBadge.foreground": "#15202b",
-        "commandCenter.border": "#15202b99",
-        "sash.hoverBorder": "#f48898",
-        "statusBar.background": "#ef5a6f",
-        "statusBar.foreground": "#15202b",
-        "statusBarItem.hoverBackground": "#ea2b46",
-        "statusBarItem.remoteBackground": "#ef5a6f",
-        "statusBarItem.remoteForeground": "#15202b",
-        "titleBar.activeBackground": "#ef5a6f",
-        "titleBar.activeForeground": "#15202b",
-        "titleBar.inactiveBackground": "#ef5a6f99",
-        "titleBar.inactiveForeground": "#15202b99"
-    },
-    "peacock.color": "#EF5A6F"
+    "php.version": "8.3"
 }
