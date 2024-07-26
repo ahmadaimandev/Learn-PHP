@@ -11,7 +11,18 @@
     <?php
     echo "<h2>Example 1</h2>";
 
-    
+    function divide($dividen, $divisor) {
+        if ($divisor == 0) {
+            throw new Exception("Division by Zero");
+        }
+        return $dividen / $divisor;
+    }
+
+    try {
+        echo divide(5, 0);
+    } catch (Exception $e) {
+        echo "unable to divide";
+    }
     ?>
 </body>
 </html>
