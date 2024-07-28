@@ -9,6 +9,7 @@
     <h1>Exceptions</h1>
     <p>Show a message when an exception is thrown:</p>
     <?php
+    echo "<h1>The try...catch Statement</h1>";
     echo "<h2>Example 1</h2>";
 
     function divide($dividen, $divisor) {
