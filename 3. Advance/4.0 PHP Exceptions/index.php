@@ -43,6 +43,14 @@
         return $dividen / $divisor;
     }
 
+    try {
+        echo divideoperation(5, 0);
+    } catch(Exception $e) {
+        echo "Unable to divide";
+    } finally {
+        echo "Process Complete";
+    }
+
     ?>
 </body>
 </html>
