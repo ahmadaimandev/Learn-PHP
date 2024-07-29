@@ -70,8 +70,9 @@
 </style>
 
 <body>
-<h1>The Exception Object</h1>
-    <h2>The Exception Object contains information about the error or unexpected behaviour that the function encountered.</h2>
+    <h1>The Exception Object</h1>
+    <h2>The Exception Object contains information about the error or unexpected behaviour that the function encountered.
+    </h2>
     <p>Syntax:<br>
         <code>new Exception(message, code, previous)</code>
     </p>
@@ -88,16 +89,19 @@
         </tr>
         <tr>
             <td>code</td>
-            <td>Optional. An integer that can be used to easily distinguish this exception from others of the same type</td>
+            <td>Optional. An integer that can be used to easily distinguish this exception from others of the same type
+            </td>
         </tr>
         <tr>
             <td>previous</td>
-            <td>Optional. If this exception was thrown in a catch block of another exception, it is recommended to pass that exception into this parameter</td>
+            <td>Optional. If this exception was thrown in a catch block of another exception, it is recommended to pass
+                that exception into this parameter</td>
         </tr>
     </table>
 
     <h1>Methods</h1>
-    <h2>When catching an exception, the following table shows some of the methods that can be used to get information about the exception:</h2>
+    <h2>When catching an exception, the following table shows some of the methods that can be used to get information
+        about the exception:</h2>
     <table>
         <tr>
             <th><strong>Method</strong></th>
@@ -109,7 +113,8 @@
         </tr>
         <tr>
             <td>getPrevious()</td>
-            <td>If this exception was triggered by another one, this method returns the previous exception. If not, then it returns null</td>
+            <td>If this exception was triggered by another one, this method returns the previous exception. If not, then
+                it returns null</td>
         </tr>
         <tr>
             <td>getCode()</td>
