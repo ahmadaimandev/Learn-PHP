@@ -37,3 +37,18 @@ try {
 } catch(Exception $e) {
   code that runs when an exception is caught
 }
+
+
+-> The try...catch...finally Statement
+* The try...catch...finally statement can be used to catch exceptions.
+* Code in the finally block will always run regardless of whether an exception was caught. 
+* If finally is present, the catch block is optional.
+
+Syntax: 
+try {
+  code that can throw exceptions
+} catch(Exception $e) {
+  code that runs when an exception is caught
+} finally {
+  code that always runs regardless of whether an exception was caught
+}
