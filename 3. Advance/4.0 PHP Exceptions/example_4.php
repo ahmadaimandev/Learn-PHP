@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>The Exception Object</title>
 </head>
 <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: "Montserrat", sans-serif;
         margin: 0;
         padding: 20px;
         background-color: #f4f4f4;
@@ -89,19 +92,16 @@
         </tr>
         <tr>
             <td>code</td>
-            <td>Optional. An integer that can be used to easily distinguish this exception from others of the same type
-            </td>
+            <td>Optional. An integer that can be used to easily distinguish this exception from others of the same type</td>
         </tr>
         <tr>
             <td>previous</td>
-            <td>Optional. If this exception was thrown in a catch block of another exception, it is recommended to pass
-                that exception into this parameter</td>
+            <td>Optional. If this exception was thrown in a catch block of another exception, it is recommended to passthat exception into this parameter</td>
         </tr>
     </table>
 
     <h1>Methods</h1>
-    <h2>When catching an exception, the following table shows some of the methods that can be used to get information
-        about the exception:</h2>
+    <h2>When catching an exception, the following table shows some of the methods that can be used to get information about the exception:</h2>
     <table>
         <tr>
             <th><strong>Method</strong></th>
