@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>The Exception Object</title>
 </head>
 <style>
@@ -92,16 +93,19 @@
         </tr>
         <tr>
             <td>code</td>
-            <td>Optional. An integer that can be used to easily distinguish this exception from others of the same type</td>
+            <td>Optional. An integer that can be used to easily distinguish this exception from others of the same type
+            </td>
         </tr>
         <tr>
             <td>previous</td>
-            <td>Optional. If this exception was thrown in a catch block of another exception, it is recommended to passthat exception into this parameter</td>
+            <td>Optional. If this exception was thrown in a catch block of another exception, it is recommended to
+                passthat exception into this parameter</td>
         </tr>
     </table>
 
     <h1>Methods</h1>
-    <h2>When catching an exception, the following table shows some of the methods that can be used to get information about the exception:</h2>
+    <h2>When catching an exception, the following table shows some of the methods that can be used to get information
+        about the exception:</h2>
     <table>
         <tr>
             <th><strong>Method</strong></th>
@@ -130,5 +134,28 @@
         </tr>
     </table>
 </body>
+
+<?php
+echo "<h3>Example 3</h3>";
+echo "<p>Output information about an exception that was thrown:</p>";
+function divide($dividend, $divisor)
+{
+    if ($divisor == 0) {
+        throw new Exception("Division by zero", 1);
+    }
+    return $dividend / $divisor;
+}
+
+try {
+    echo divide(5, 0);
+} catch (Exception $ex) {
+    $code = $ex->getCode();
+    $message = $ex->getMessage();
+    $file = $ex->getFile();
+    $line = $ex->getLine();
+    echo "Exception thrown in $file on line $line: [Code $code]
+    $message";
+}
+?>
 
 </html>
