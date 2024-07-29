@@ -25,7 +25,6 @@
     </p>
 
     <h3>Parameter Values</h3>
-
     <table>
         <tr>
             <th><strong>Parameter</strong></th>
@@ -42,6 +41,29 @@
             </td>
             <td>Optional. If this exception was thrown in a catch block of another exception,
                 it is recommended to pass that exception into this parameter</td>
+        </tr>
+    </table>
+
+    <h1>Methods</h1>
+    <h2>When catching an exception, the following table shows some of the methods that can be used to get information about the exception:</h2>
+    <table>
+        <tr>
+            <th><strong>Method</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+        <tr>
+            <td>getMessage()</td>
+            <td>getPrevious()</td>
+            <td>getCode()</td>
+            <td>getFile()</td>
+            <td>getLine()</td>
+        </tr>
+        <tr>
+            <td>Returns a string describing why the exception was thrown</td>
+            <td>If this exception was triggered by another one, this method returns the previous exception. If not, then it returns null</td>
+            <td>Returns the exception code</td>
+            <td>Returns the full path of the file in which the exception was thrown</td>
+            <td>Returns the line number of the line of code which threw the exception</td>
         </tr>
     </table>
 </body>
