@@ -26,3 +26,10 @@ echo(abs(-100));
 
 Code syntax:
 echo(sqrt(100));
+
+5. round() function
+-> round() function rounds a floating-point number to a nearest integer.
+
+Code syntax:
+echo(round(100.5));
+
