@@ -7,3 +7,10 @@ PHP - Math
 
 Code syntax:
 echo (pi());
+
+2. min() and max() functions
+-> min() and max() functions can be used to find the lowest and highest value in a list of arguments.
+
+Code syntax:
+echo(min(0, 150, 30, 20, -8, -200));
+echo(max(0, 150, 30, 20, -8, -200));
