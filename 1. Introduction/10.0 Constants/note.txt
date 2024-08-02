@@ -1,0 +1,17 @@
+PHP - Constant
+
+-> Constant are like variables. except that once they change, they cannot be changed again.
+-> Constant is an identifier (name) for a simple value. The value cannot be change during the script.
+-> A valid constant name start with a letter or underscore (no $ sign before the constant name).
+NOTE: Unlike variables, constant are automatically global across the entire script.
+
+1. Create a PHP constant 
+-> To create a constant, use the define() function:
+
+Code syntax:
+define(name, value, case-insensitive);
+
+Parameter:
+-> name:
+-> value:
+-> case-insensitive:
