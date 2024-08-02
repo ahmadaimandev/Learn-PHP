@@ -20,3 +20,9 @@ echo(max(0, 150, 30, 20, -8, -200));
 
 Code syntax:
 echo(abs(-100));
+
+4. sqrt() function
+-> sqrt() function return the square root of number 
+
+Code syntax:
+echo(sqrt(100));

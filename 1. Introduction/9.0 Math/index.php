@@ -21,5 +21,11 @@
     <?php
     echo "Output Abs Value: " . (abs(-7.9)) . "<br>";
     ?>
+
+    <h1 style="text-align: center;">PHP - sqrt() function</h1>
+    <?php
+    echo "Square root value: 100" . "<br>";
+    echo "Output Square Root Value: " . (sqrt(100)) . "<br>";
+    ?>
 </body>
 </html>
