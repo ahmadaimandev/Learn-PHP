@@ -16,5 +16,10 @@
     echo "Output Min Value: " . (min(0, 150, 30, 20, -8, -200)) . "<br>";
     echo "Output Max Value: " . (max(0, 150, 30, 20, -8, -200)) . "<br>";
     ?>
+
+    <h1 style="text-align: center;">PHP - abs() function</h1>
+    <?php
+    echo "Output Abs Value: " . (abs(-7.9)) . "<br>";
+    ?>
 </body>
 </html>

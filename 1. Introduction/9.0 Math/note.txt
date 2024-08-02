@@ -14,3 +14,9 @@ echo (pi());
 Code syntax:
 echo(min(0, 150, 30, 20, -8, -200));
 echo(max(0, 150, 30, 20, -8, -200));
+
+3. abs() function
+-> abs() function returns the absolute (positive) value of a numbers.
+
+Code syntax:
+echo(abs(-100));
