@@ -33,3 +33,15 @@ echo(sqrt(100));
 Code syntax:
 echo(round(100.5));
 
+7. random() function
+-> rand() function generates a random number
+
+Code syntax:
+echo(rand());
+
+-> To get more control over a random number, you can add optional min and max parameters to specify the lowest integer.
+-> And the highest integer to be returned.
+
+Code syntax:
+echo(rand(1, 10));
+echo(rand(1, 100));
