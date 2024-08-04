@@ -12,6 +12,22 @@ Code syntax:
 define(name, value, case-insensitive);
 
 Parameter:
--> name:
--> value:
--> case-insensitive:
+-> name: Specifies the name of the constant
+-> value: Specifies the value of the constant
+-> case-insensitive: Specifies whether the constant name should be case-insensitive
+default is false. Note: Defining case-insensitive constants was deprecated in PHP 7.3. 
+PHP 8.0 accepts only false, the value true will produce a warning.  
+
+
+2. PHP const keyword
+-> You can also create a constant by using the const keyword.
+
+
+const vs define
+* const are always case-sensitive
+* define() has a case-insensitive option
+* const cannot be created inside another block scope, like inside a function or inside an if statement.
+* define can be created inside another block scope
+
+3. PHP Constant Array
+-> From PHP7, you can create an Array constant using the define() function.
