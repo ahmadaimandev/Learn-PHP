@@ -65,8 +65,8 @@
             <h3>Example 2</h3>
             <?php
             echo "<p>Create a constant with a case-insensitive name:</p>";
-            define("Greeting", "Welcome to W3Schools.com!", true);
-            echo "Output: " . Greeting;
+            define("SAYING", "Welcome to W3Schools.com!", true);
+            echo "Output: " . SAYING;
             ?>
         </div>
 
@@ -81,7 +81,7 @@
         </div>
 
         <h1>PHP - Constant Array</h1>
-        
+        <p>From PHP7, you can create an Array constant using the define() function.</p>
         <div class="example">
             <?php
             define("cars", [
@@ -90,6 +90,19 @@
                 "Toyota"
             ]);
             echo cars[0];
+            ?>
+        </div>
+
+        <h1>PHP - Constant Are Global</h1>
+        <p>Constants are automatically global and can be used across the entire script.</p>
+        <div class="example">
+            <?php
+            echo "<p>This example uses a constant inside a function, even if it is defined outside the function:</p>";
+            define("GREET", "Welcome To W3Schools.com!");
+            function myTest() {
+                echo GREET;
+            }
+            myTest();
             ?>
         </div>
     </div>

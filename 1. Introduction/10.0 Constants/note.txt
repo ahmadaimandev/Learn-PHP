@@ -31,3 +31,6 @@ const vs define
 
 3. PHP Constant Array
 -> From PHP7, you can create an Array constant using the define() function.
+
+4. PHP - Constant Are Global
+-> Constants are automatically global and can be used across the entire script.
