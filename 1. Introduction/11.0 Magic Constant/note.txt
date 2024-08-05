@@ -1,0 +1,11 @@
+PHP - Magic Constant
+
+- PHP Predefined Constants
+* PHP has nine predefined constant that change value depending on where they used,
+* And therefor they are called  "Magic Constant"
+* These magic constants are written in:
+1. Double underscore at the start and the end
+2. Except for the ClassName::class constant
+
+NOTE:
+The magic constants are case-insensitive, meaning __LINE__ returns the same as __line__.
